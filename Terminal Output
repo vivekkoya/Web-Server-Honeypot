@@ -1,0 +1,2369 @@
+***Output***
++++ readlink -f ./install.sh
+++ dirname /opt/mhn/install.sh
++ MHN_HOME=/opt/mhn
++ WWW_OWNER=www-data
++ SCRIPTS=/opt/mhn/scripts/
++ cd /opt/mhn/scripts/
++ '[' -f /etc/redhat-release ']'
++ '[' -f /etc/debian_version ']'
++ apt-get update
+Hit:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease        
+Reading package lists... Done                                            
++ apt-get upgrade -y
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+The following packages have been kept back:
+  linux-gcp linux-headers-gcp linux-image-gcp
+The following packages will be upgraded:
+  linux-base
+1 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Need to get 17.9 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-base all 4.5ubuntu1.7 [17.9 kB]
+Fetched 17.9 kB in 0s (0 B/s)   
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 52041 files and directories currently installed.)
+Preparing to unpack .../linux-base_4.5ubuntu1.7_all.deb ...
+Unpacking linux-base (4.5ubuntu1.7) over (4.5ubuntu1.6) ...
+Setting up linux-base (4.5ubuntu1.7) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
++ apt-get install -y python-pip
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp
+  cpp-7 dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan4 libatomic1 libbinutils libc-dev-bin
+  libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libexpat1-dev libfakeroot
+  libfile-fcntllock-perl libgcc-7-dev libgomp1 libisl19 libitm1 liblsan0
+  libmpc3 libmpx2 libpython-all-dev libpython-dev libpython2.7
+  libpython2.7-dev libquadmath0 libstdc++-7-dev libtsan0 libubsan0
+  linux-libc-dev make manpages manpages-dev python-all python-all-dev
+  python-asn1crypto python-cffi-backend python-crypto
+  python-cryptography python-dbus python-dev python-enum34 python-gi
+  python-idna python-ipaddress python-keyring python-keyrings.alt
+  python-pip-whl python-pkg-resources python-secretstorage
+  python-setuptools python-six python-wheel python-xdg python2.7-dev
+Suggested packages:
+  binutils-doc cpp-doc gcc-7-locales debian-keyring g++-multilib
+  g++-7-multilib gcc-7-doc libstdc++6-7-dbg gcc-multilib autoconf
+  automake libtool flex bison gdb gcc-doc gcc-7-multilib libgcc1-dbg
+  libgomp1-dbg libitm1-dbg libatomic1-dbg libasan4-dbg liblsan0-dbg
+  libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx2-dbg
+  libquadmath0-dbg glibc-doc bzr libstdc++-7-doc make-doc man-browser
+  python-crypto-doc python-cryptography-doc python-cryptography-vectors
+  python-dbus-dbg python-dbus-doc python-enum34-doc python-gi-cairo
+  gnome-keyring libkf5wallet-bin gir1.2-gnomekeyring-1.0 python-fs
+  python-gdata python-keyczar python-secretstorage-doc
+  python-setuptools-doc
+The following NEW packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp
+  cpp-7 dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base
+  libalgorithm-diff-perl libalgorithm-diff-xs-perl
+  libalgorithm-merge-perl libasan4 libatomic1 libbinutils libc-dev-bin
+  libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libexpat1-dev libfakeroot
+  libfile-fcntllock-perl libgcc-7-dev libgomp1 libisl19 libitm1 liblsan0
+  libmpc3 libmpx2 libpython-all-dev libpython-dev libpython2.7
+  libpython2.7-dev libquadmath0 libstdc++-7-dev libtsan0 libubsan0
+  linux-libc-dev make manpages manpages-dev python-all python-all-dev
+  python-asn1crypto python-cffi-backend python-crypto
+  python-cryptography python-dbus python-dev python-enum34 python-gi
+  python-idna python-ipaddress python-keyring python-keyrings.alt
+  python-pip python-pip-whl python-pkg-resources python-secretstorage
+  python-setuptools python-six python-wheel python-xdg python2.7-dev
+0 upgraded, 69 newly installed, 0 to remove and 3 not upgraded.
+Need to get 77.4 MB of archives.
+After this operation, 224 MB of additional disk space will be used.
+Get:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 manpages all 4.15-1 [1234 kB]
+Get:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-common amd64 2.30-21ubuntu1~18.04.7 [197 kB]
+Get:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libbinutils amd64 2.30-21ubuntu1~18.04.7 [489 kB]
+Get:4 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.30-21ubuntu1~18.04.7 [1839 kB]
+Get:5 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils amd64 2.30-21ubuntu1~18.04.7 [3388 B]
+Get:6 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libc-dev-bin amd64 2.27-3ubuntu1.4 [71.8 kB]
+Get:7 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-libc-dev amd64 4.15.0-162.170 [992 kB]
+Get:8 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libc6-dev amd64 2.27-3ubuntu1.4 [2585 kB]
+Get:9 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7-base amd64 7.5.0-3ubuntu1~18.04 [18.3 kB]
+Get:10 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libisl19 amd64 0.19-1 [551 kB]
+Get:11 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]
+Get:12 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp-7 amd64 7.5.0-3ubuntu1~18.04 [8591 kB]
+Get:13 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp amd64 4:7.4.0-1ubuntu2.3 [27.7 kB]
+Get:14 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcc1-0 amd64 8.4.0-1ubuntu1~18.04 [39.4 kB]
+Get:15 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgomp1 amd64 8.4.0-1ubuntu1~18.04 [76.5 kB]
+Get:16 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libitm1 amd64 8.4.0-1ubuntu1~18.04 [27.9 kB]
+Get:17 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libatomic1 amd64 8.4.0-1ubuntu1~18.04 [9192 B]
+Get:18 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libasan4 amd64 7.5.0-3ubuntu1~18.04 [358 kB]
+Get:19 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 liblsan0 amd64 8.4.0-1ubuntu1~18.04 [133 kB]
+Get:20 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libtsan0 amd64 8.4.0-1ubuntu1~18.04 [288 kB]
+Get:21 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libubsan0 amd64 7.5.0-3ubuntu1~18.04 [126 kB]
+Get:22 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcilkrts5 amd64 7.5.0-3ubuntu1~18.04 [42.5 kB]
+Get:23 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libmpx2 amd64 8.4.0-1ubuntu1~18.04 [11.6 kB]
+Get:24 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libquadmath0 amd64 8.4.0-1ubuntu1~18.04 [134 kB]
+Get:25 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgcc-7-dev amd64 7.5.0-3ubuntu1~18.04 [2378 kB]
+Get:26 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7 amd64 7.5.0-3ubuntu1~18.04 [9381 kB]
+Get:27 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc amd64 4:7.4.0-1ubuntu2.3 [5184 B]
+Get:28 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libstdc++-7-dev amd64 7.5.0-3ubuntu1~18.04 [1471 kB]
+Get:29 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 g++-7 amd64 7.5.0-3ubuntu1~18.04 [9697 kB]
+Get:30 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 g++ amd64 4:7.4.0-1ubuntu2.3 [1568 B]
+Get:31 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 make amd64 4.1-9.1ubuntu1 [154 kB]
+Get:32 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdpkg-perl all 1.19.0.5ubuntu2.3 [211 kB]
+Get:33 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 dpkg-dev all 1.19.0.5ubuntu2.3 [607 kB]
+Get:34 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 build-essential amd64 12.4ubuntu1 [4758 B]
+Get:35 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libfakeroot amd64 1.22-2ubuntu1 [25.9 kB]
+Get:36 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 fakeroot amd64 1.22-2ubuntu1 [62.3 kB]
+Get:37 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libalgorithm-diff-perl all 1.19.03-1 [47.6 kB]
+Get:38 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libalgorithm-diff-xs-perl amd64 0.04-5 [11.1 kB]
+Get:39 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+Get:40 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libexpat1-dev amd64 2.2.5-3ubuntu0.2 [122 kB]
+Get:41 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libfile-fcntllock-perl amd64 0.22-3build2 [33.2 kB]
+Get:42 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpython2.7 amd64 2.7.17-1~18.04ubuntu1.6 [1053 kB]
+Get:43 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpython2.7-dev amd64 2.7.17-1~18.04ubuntu1.6 [28.3 MB]
+Get:44 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libpython-dev amd64 2.7.15~rc1-1 [7684 B]
+Get:45 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libpython-all-dev amd64 2.7.15~rc1-1 [1092 B]
+Get:46 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 manpages-dev all 4.15-1 [2217 kB]
+Get:47 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-all amd64 2.7.15~rc1-1 [1076 B]
+Get:48 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python2.7-dev amd64 2.7.17-1~18.04ubuntu1.6 [279 kB]
+Get:49 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-dev amd64 2.7.15~rc1-1 [1256 B]
+Get:50 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-all-dev amd64 2.7.15~rc1-1 [1100 B]
+Get:51 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-asn1crypto all 0.24.0-1 [72.7 kB]
+Get:52 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-cffi-backend amd64 1.11.5-1 [63.4 kB]
+Get:53 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-crypto amd64 2.6.1-8ubuntu2 [244 kB]
+Get:54 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-enum34 all 1.1.6-2 [34.8 kB]
+Get:55 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-idna all 2.6-1 [32.4 kB]
+Get:56 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-ipaddress all 1.0.17-1 [18.2 kB]
+Get:57 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-six all 1.11.0-2 [11.3 kB]
+Get:58 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python-cryptography amd64 2.1.4-1ubuntu1.4 [276 kB]
+Get:59 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-dbus amd64 1.2.6-1 [90.2 kB]
+Get:60 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python-gi amd64 3.26.1-2ubuntu1 [197 kB]
+Get:61 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-secretstorage all 2.3.1-2 [11.8 kB]
+Get:62 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-keyring all 10.6.0-1 [30.6 kB]
+Get:63 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-keyrings.alt all 3.0-1 [16.7 kB]
+Get:64 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python-pip-whl all 9.0.1-2.3~ubuntu1.18.04.5 [1653 kB]
+Get:65 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python-pip all 9.0.1-2.3~ubuntu1.18.04.5 [151 kB]
+Get:66 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-pkg-resources all 39.0.1-2 [128 kB]
+Get:67 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 python-setuptools all 39.0.1-2 [329 kB]
+Get:68 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/universe amd64 python-wheel all 0.30.0-0.2 [36.4 kB]
+Get:69 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python-xdg all 0.25-4ubuntu1.1 [31.2 kB]
+Fetched 77.4 MB in 1s (54.0 MB/s)  
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package manpages.
+(Reading database ... 52041 files and directories currently installed.)
+Preparing to unpack .../00-manpages_4.15-1_all.deb ...
+Unpacking manpages (4.15-1) ...
+Selecting previously unselected package binutils-common:amd64.
+Preparing to unpack .../01-binutils-common_2.30-21ubuntu1~18.04.7_amd64.deb ...
+Unpacking binutils-common:amd64 (2.30-21ubuntu1~18.04.7) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../02-libbinutils_2.30-21ubuntu1~18.04.7_amd64.deb ...
+Unpacking libbinutils:amd64 (2.30-21ubuntu1~18.04.7) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../03-binutils-x86-64-linux-gnu_2.30-21ubuntu1~18.04.7_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04.7) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../04-binutils_2.30-21ubuntu1~18.04.7_amd64.deb ...
+Unpacking binutils (2.30-21ubuntu1~18.04.7) ...
+Selecting previously unselected package libc-dev-bin.
+Preparing to unpack .../05-libc-dev-bin_2.27-3ubuntu1.4_amd64.deb ...
+Unpacking libc-dev-bin (2.27-3ubuntu1.4) ...
+Selecting previously unselected package linux-libc-dev:amd64.
+Preparing to unpack .../06-linux-libc-dev_4.15.0-162.170_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.15.0-162.170) ...
+Selecting previously unselected package libc6-dev:amd64.
+Preparing to unpack .../07-libc6-dev_2.27-3ubuntu1.4_amd64.deb ...
+Unpacking libc6-dev:amd64 (2.27-3ubuntu1.4) ...
+Selecting previously unselected package gcc-7-base:amd64.
+Preparing to unpack .../08-gcc-7-base_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking gcc-7-base:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package libisl19:amd64.
+Preparing to unpack .../09-libisl19_0.19-1_amd64.deb ...
+Unpacking libisl19:amd64 (0.19-1) ...
+Selecting previously unselected package libmpc3:amd64.
+Preparing to unpack .../10-libmpc3_1.1.0-1_amd64.deb ...
+Unpacking libmpc3:amd64 (1.1.0-1) ...
+Selecting previously unselected package cpp-7.
+Preparing to unpack .../11-cpp-7_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking cpp-7 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../12-cpp_4%3a7.4.0-1ubuntu2.3_amd64.deb ...
+Unpacking cpp (4:7.4.0-1ubuntu2.3) ...
+Selecting previously unselected package libcc1-0:amd64.
+Preparing to unpack .../13-libcc1-0_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libcc1-0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libgomp1:amd64.
+Preparing to unpack .../14-libgomp1_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../15-libitm1_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libitm1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../16-libatomic1_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libatomic1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libasan4:amd64.
+Preparing to unpack .../17-libasan4_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libasan4:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../18-liblsan0_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking liblsan0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../19-libtsan0_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libtsan0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libubsan0:amd64.
+Preparing to unpack .../20-libubsan0_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libubsan0:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package libcilkrts5:amd64.
+Preparing to unpack .../21-libcilkrts5_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libcilkrts5:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package libmpx2:amd64.
+Preparing to unpack .../22-libmpx2_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libmpx2:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../23-libquadmath0_8.4.0-1ubuntu1~18.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Selecting previously unselected package libgcc-7-dev:amd64.
+Preparing to unpack .../24-libgcc-7-dev_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libgcc-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package gcc-7.
+Preparing to unpack .../25-gcc-7_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking gcc-7 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../26-gcc_4%3a7.4.0-1ubuntu2.3_amd64.deb ...
+Unpacking gcc (4:7.4.0-1ubuntu2.3) ...
+Selecting previously unselected package libstdc++-7-dev:amd64.
+Preparing to unpack .../27-libstdc++-7-dev_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking libstdc++-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package g++-7.
+Preparing to unpack .../28-g++-7_7.5.0-3ubuntu1~18.04_amd64.deb ...
+Unpacking g++-7 (7.5.0-3ubuntu1~18.04) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../29-g++_4%3a7.4.0-1ubuntu2.3_amd64.deb ...
+Unpacking g++ (4:7.4.0-1ubuntu2.3) ...
+Selecting previously unselected package make.
+Preparing to unpack .../30-make_4.1-9.1ubuntu1_amd64.deb ...
+Unpacking make (4.1-9.1ubuntu1) ...
+Selecting previously unselected package libdpkg-perl.
+Preparing to unpack .../31-libdpkg-perl_1.19.0.5ubuntu2.3_all.deb ...
+Unpacking libdpkg-perl (1.19.0.5ubuntu2.3) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../32-dpkg-dev_1.19.0.5ubuntu2.3_all.deb ...
+Unpacking dpkg-dev (1.19.0.5ubuntu2.3) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../33-build-essential_12.4ubuntu1_amd64.deb ...
+Unpacking build-essential (12.4ubuntu1) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../34-libfakeroot_1.22-2ubuntu1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.22-2ubuntu1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../35-fakeroot_1.22-2ubuntu1_amd64.deb ...
+Unpacking fakeroot (1.22-2ubuntu1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../36-libalgorithm-diff-perl_1.19.03-1_all.deb ...
+Unpacking libalgorithm-diff-perl (1.19.03-1) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../37-libalgorithm-diff-xs-perl_0.04-5_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-5) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../38-libalgorithm-merge-perl_0.08-3_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-3) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../39-libexpat1-dev_2.2.5-3ubuntu0.2_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.2.5-3ubuntu0.2) ...
+Selecting previously unselected package libfile-fcntllock-perl.
+Preparing to unpack .../40-libfile-fcntllock-perl_0.22-3build2_amd64.deb ...
+Unpacking libfile-fcntllock-perl (0.22-3build2) ...
+Selecting previously unselected package libpython2.7:amd64.
+Preparing to unpack .../41-libpython2.7_2.7.17-1~18.04ubuntu1.6_amd64.deb ...
+Unpacking libpython2.7:amd64 (2.7.17-1~18.04ubuntu1.6) ...
+Selecting previously unselected package libpython2.7-dev:amd64.
+Preparing to unpack .../42-libpython2.7-dev_2.7.17-1~18.04ubuntu1.6_amd64.deb ...
+Unpacking libpython2.7-dev:amd64 (2.7.17-1~18.04ubuntu1.6) ...
+Selecting previously unselected package libpython-dev:amd64.
+Preparing to unpack .../43-libpython-dev_2.7.15~rc1-1_amd64.deb ...
+Unpacking libpython-dev:amd64 (2.7.15~rc1-1) ...
+Selecting previously unselected package libpython-all-dev:amd64.
+Preparing to unpack .../44-libpython-all-dev_2.7.15~rc1-1_amd64.deb ...
+Unpacking libpython-all-dev:amd64 (2.7.15~rc1-1) ...
+Selecting previously unselected package manpages-dev.
+Preparing to unpack .../45-manpages-dev_4.15-1_all.deb ...
+Unpacking manpages-dev (4.15-1) ...
+Selecting previously unselected package python-all.
+Preparing to unpack .../46-python-all_2.7.15~rc1-1_amd64.deb ...
+Unpacking python-all (2.7.15~rc1-1) ...
+Selecting previously unselected package python2.7-dev.
+Preparing to unpack .../47-python2.7-dev_2.7.17-1~18.04ubuntu1.6_amd64.deb ...
+Unpacking python2.7-dev (2.7.17-1~18.04ubuntu1.6) ...
+Selecting previously unselected package python-dev.
+Preparing to unpack .../48-python-dev_2.7.15~rc1-1_amd64.deb ...
+Unpacking python-dev (2.7.15~rc1-1) ...
+Selecting previously unselected package python-all-dev.
+Preparing to unpack .../49-python-all-dev_2.7.15~rc1-1_amd64.deb ...
+Unpacking python-all-dev (2.7.15~rc1-1) ...
+Selecting previously unselected package python-asn1crypto.
+Preparing to unpack .../50-python-asn1crypto_0.24.0-1_all.deb ...
+Unpacking python-asn1crypto (0.24.0-1) ...
+Selecting previously unselected package python-cffi-backend.
+Preparing to unpack .../51-python-cffi-backend_1.11.5-1_amd64.deb ...
+Unpacking python-cffi-backend (1.11.5-1) ...
+Selecting previously unselected package python-crypto.
+Preparing to unpack .../52-python-crypto_2.6.1-8ubuntu2_amd64.deb ...
+Unpacking python-crypto (2.6.1-8ubuntu2) ...
+Selecting previously unselected package python-enum34.
+Preparing to unpack .../53-python-enum34_1.1.6-2_all.deb ...
+Unpacking python-enum34 (1.1.6-2) ...
+Selecting previously unselected package python-idna.
+Preparing to unpack .../54-python-idna_2.6-1_all.deb ...
+Unpacking python-idna (2.6-1) ...
+Selecting previously unselected package python-ipaddress.
+Preparing to unpack .../55-python-ipaddress_1.0.17-1_all.deb ...
+Unpacking python-ipaddress (1.0.17-1) ...
+Selecting previously unselected package python-six.
+Preparing to unpack .../56-python-six_1.11.0-2_all.deb ...
+Unpacking python-six (1.11.0-2) ...
+Selecting previously unselected package python-cryptography.
+Preparing to unpack .../57-python-cryptography_2.1.4-1ubuntu1.4_amd64.deb ...
+Unpacking python-cryptography (2.1.4-1ubuntu1.4) ...
+Selecting previously unselected package python-dbus.
+Preparing to unpack .../58-python-dbus_1.2.6-1_amd64.deb ...
+Unpacking python-dbus (1.2.6-1) ...
+Selecting previously unselected package python-gi.
+Preparing to unpack .../59-python-gi_3.26.1-2ubuntu1_amd64.deb ...
+Unpacking python-gi (3.26.1-2ubuntu1) ...
+Selecting previously unselected package python-secretstorage.
+Preparing to unpack .../60-python-secretstorage_2.3.1-2_all.deb ...
+Unpacking python-secretstorage (2.3.1-2) ...
+Selecting previously unselected package python-keyring.
+Preparing to unpack .../61-python-keyring_10.6.0-1_all.deb ...
+Unpacking python-keyring (10.6.0-1) ...
+Selecting previously unselected package python-keyrings.alt.
+Preparing to unpack .../62-python-keyrings.alt_3.0-1_all.deb ...
+Unpacking python-keyrings.alt (3.0-1) ...
+Selecting previously unselected package python-pip-whl.
+Preparing to unpack .../63-python-pip-whl_9.0.1-2.3~ubuntu1.18.04.5_all.deb ...
+Unpacking python-pip-whl (9.0.1-2.3~ubuntu1.18.04.5) ...
+Selecting previously unselected package python-pip.
+Preparing to unpack .../64-python-pip_9.0.1-2.3~ubuntu1.18.04.5_all.deb ...
+Unpacking python-pip (9.0.1-2.3~ubuntu1.18.04.5) ...
+Selecting previously unselected package python-pkg-resources.
+Preparing to unpack .../65-python-pkg-resources_39.0.1-2_all.deb ...
+Unpacking python-pkg-resources (39.0.1-2) ...
+Selecting previously unselected package python-setuptools.
+Preparing to unpack .../66-python-setuptools_39.0.1-2_all.deb ...
+Unpacking python-setuptools (39.0.1-2) ...
+Selecting previously unselected package python-wheel.
+Preparing to unpack .../67-python-wheel_0.30.0-0.2_all.deb ...
+Unpacking python-wheel (0.30.0-0.2) ...
+Selecting previously unselected package python-xdg.
+Preparing to unpack .../68-python-xdg_0.25-4ubuntu1.1_all.deb ...
+Unpacking python-xdg (0.25-4ubuntu1.1) ...
+Setting up libquadmath0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up python-idna (2.6-1) ...
+Setting up libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up libatomic1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up python-pip-whl (9.0.1-2.3~ubuntu1.18.04.5) ...
+Setting up manpages (4.15-1) ...
+Setting up libcc1-0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up python-asn1crypto (0.24.0-1) ...
+Setting up make (4.1-9.1ubuntu1) ...
+Setting up python-crypto (2.6.1-8ubuntu2) ...
+Setting up libtsan0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up python-wheel (0.30.0-0.2) ...
+Setting up linux-libc-dev:amd64 (4.15.0-162.170) ...
+Setting up libdpkg-perl (1.19.0.5ubuntu2.3) ...
+Setting up python-pkg-resources (39.0.1-2) ...
+Setting up liblsan0:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up gcc-7-base:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up binutils-common:amd64 (2.30-21ubuntu1~18.04.7) ...
+Setting up libfile-fcntllock-perl (0.22-3build2) ...
+Setting up python-cffi-backend (1.11.5-1) ...
+Setting up libmpx2:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up python-gi (3.26.1-2ubuntu1) ...
+Setting up python-six (1.11.0-2) ...
+Setting up libfakeroot:amd64 (1.22-2ubuntu1) ...
+Setting up python-enum34 (1.1.6-2) ...
+Setting up libpython2.7:amd64 (2.7.17-1~18.04ubuntu1.6) ...
+Setting up libalgorithm-diff-perl (1.19.03-1) ...
+Setting up libmpc3:amd64 (1.1.0-1) ...
+Setting up libc-dev-bin (2.27-3ubuntu1.4) ...
+Setting up python-dbus (1.2.6-1) ...
+Setting up python-ipaddress (1.0.17-1) ...
+Setting up manpages-dev (4.15-1) ...
+Setting up python-pip (9.0.1-2.3~ubuntu1.18.04.5) ...
+Setting up libc6-dev:amd64 (2.27-3ubuntu1.4) ...
+Setting up python-all (2.7.15~rc1-1) ...
+Setting up libitm1:amd64 (8.4.0-1ubuntu1~18.04) ...
+Setting up python-xdg (0.25-4ubuntu1.1) ...
+Setting up libisl19:amd64 (0.19-1) ...
+Setting up python-setuptools (39.0.1-2) ...
+Setting up libasan4:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up libbinutils:amd64 (2.30-21ubuntu1~18.04.7) ...
+Setting up libcilkrts5:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up libubsan0:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up fakeroot (1.22-2ubuntu1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/fakeroot.1.gz because associated file /usr/share/man/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/faked.1.gz because associated file /usr/share/man/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/fakeroot.1.gz because associated file /usr/share/man/es/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/es/man1/faked.1.gz because associated file /usr/share/man/es/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/fakeroot.1.gz because associated file /usr/share/man/fr/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/faked.1.gz because associated file /usr/share/man/fr/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/fakeroot.1.gz because associated file /usr/share/man/sv/man1/fakeroot-sysv.1.gz (of link group fakeroot) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/sv/man1/faked.1.gz because associated file /usr/share/man/sv/man1/faked-sysv.1.gz (of link group fakeroot) doesn't exist
+Setting up python-keyrings.alt (3.0-1) ...
+Setting up libgcc-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up cpp-7 (7.5.0-3ubuntu1~18.04) ...
+Setting up libstdc++-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...
+Setting up libalgorithm-merge-perl (0.08-3) ...
+Setting up libalgorithm-diff-xs-perl (0.04-5) ...
+Setting up python-cryptography (2.1.4-1ubuntu1.4) ...
+Setting up libexpat1-dev:amd64 (2.2.5-3ubuntu0.2) ...
+Setting up libpython2.7-dev:amd64 (2.7.17-1~18.04ubuntu1.6) ...
+Setting up python2.7-dev (2.7.17-1~18.04ubuntu1.6) ...
+Setting up binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04.7) ...
+Setting up python-secretstorage (2.3.1-2) ...
+Setting up cpp (4:7.4.0-1ubuntu2.3) ...
+Setting up libpython-dev:amd64 (2.7.15~rc1-1) ...
+Setting up python-keyring (10.6.0-1) ...
+Setting up python-dev (2.7.15~rc1-1) ...
+Setting up libpython-all-dev:amd64 (2.7.15~rc1-1) ...
+Setting up python-all-dev (2.7.15~rc1-1) ...
+Setting up binutils (2.30-21ubuntu1~18.04.7) ...
+Setting up gcc-7 (7.5.0-3ubuntu1~18.04) ...
+Setting up g++-7 (7.5.0-3ubuntu1~18.04) ...
+Setting up gcc (4:7.4.0-1ubuntu2.3) ...
+Setting up dpkg-dev (1.19.0.5ubuntu2.3) ...
+Setting up g++ (4:7.4.0-1ubuntu2.3) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/c++.1.gz because associated file /usr/share/man/man1/g++.1.gz (of link group c++) doesn't exist
+Setting up build-essential (12.4ubuntu1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
++ pip install --upgrade pip
+The directory '/home/surikoya/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/home/surikoya/.cache/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/27/79/8a850fe3496446ff0d584327ae44e7500daf6764ca1a382d2d02789accf7/pip-20.3.4-py2.py3-none-any.whl (1.5MB)
+    100% |████████████████████████████████| 1.5MB 741kB/s 
+Installing collected packages: pip
+  Found existing installation: pip 9.0.1
+    Not uninstalling pip at /usr/lib/python2.7/dist-packages, outside environment /usr
+Successfully installed pip-20.3.4
++ apt-get install apt-transport-https -y
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Need to get 4348 B of archives.
+After this operation, 154 kB of additional disk space will be used.
+Get:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.14 [4348 B]
+Fetched 4348 B in 0s (0 B/s)            
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 58772 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_1.6.14_all.deb ...
+Unpacking apt-transport-https (1.6.14) ...
+Setting up apt-transport-https (1.6.14) ...
++ apt-get install build-essential -y
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+build-essential is already the newest version (12.4ubuntu1).
+build-essential set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+++ date
++ echo '[Sat Nov 13 22:34:23 UTC 2021] Starting Installation of all MHN packages'
+[Sat Nov 13 22:34:23 UTC 2021] Starting Installation of all MHN packages
+++ date
++ echo '[Sat Nov 13 22:34:23 UTC 2021] ========= Installing hpfeeds ========='
+[Sat Nov 13 22:34:23 UTC 2021] ========= Installing hpfeeds =========
++ ./install_hpfeeds.sh
++++ readlink -f ./install_hpfeeds.sh
+++ dirname /opt/mhn/scripts/install_hpfeeds.sh
++ SCRIPTS=/opt/mhn/scripts
++ MHN_HOME=/opt/mhn/scripts/..
++ '[' -f /etc/debian_version ']'
++ apt-get -y update
+Hit:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease        
+Reading package lists... Done                      
++ apt-get -y install libffi-dev build-essential python-pip python-dev git libssl-dev supervisor
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+build-essential is already the newest version (12.4ubuntu1).
+python-dev is already the newest version (2.7.15~rc1-1).
+python-dev set to manually installed.
+git is already the newest version (1:2.17.1-1ubuntu0.9).
+python-pip is already the newest version (9.0.1-2.3~ubuntu1.18.04.5).
+The following additional packages will be installed:
+  python-meld3
+Suggested packages:
+  libssl-doc supervisor-doc
+The following NEW packages will be installed:
+  libffi-dev libssl-dev python-meld3 supervisor
+0 upgraded, 4 newly installed, 0 to remove and 3 not upgraded.
+Need to get 2011 kB of archives.
+After this operation, 9794 kB of additional disk space will be used.
+Get:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libssl-dev amd64 1.1.1-1ubuntu2.1~18.04.13 [1568 kB]
+Get:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libffi-dev amd64 3.2.1-8 [156 kB]
+Get:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/universe amd64 python-meld3 all 1.0.2-2 [30.9 kB]
+Get:4 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/universe amd64 supervisor all 3.3.1-1.1 [256 kB]
+Fetched 2011 kB in 0s (45.4 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libssl-dev:amd64.
+(Reading database ... 58776 files and directories currently installed.)
+Preparing to unpack .../libssl-dev_1.1.1-1ubuntu2.1~18.04.13_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.1-1ubuntu2.1~18.04.13) ...
+Selecting previously unselected package libffi-dev:amd64.
+Preparing to unpack .../libffi-dev_3.2.1-8_amd64.deb ...
+Unpacking libffi-dev:amd64 (3.2.1-8) ...
+Selecting previously unselected package python-meld3.
+Preparing to unpack .../python-meld3_1.0.2-2_all.deb ...
+Unpacking python-meld3 (1.0.2-2) ...
+Selecting previously unselected package supervisor.
+Preparing to unpack .../supervisor_3.3.1-1.1_all.deb ...
+Unpacking supervisor (3.3.1-1.1) ...
+Setting up libssl-dev:amd64 (1.1.1-1ubuntu2.1~18.04.13) ...
+Setting up python-meld3 (1.0.2-2) ...
+Setting up libffi-dev:amd64 (3.2.1-8) ...
+Setting up supervisor (3.3.1-1.1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/supervisor.service → /lib/systemd/system/supervisor.service.
+Processing triggers for systemd (237-3ubuntu10.52) ...
+++ which python
++ PYTHON=/usr/bin/python
+++ which pip
++ PIP=/usr/local/bin/pip
++ /usr/local/bin/pip install virtualenv
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting virtualenv
+  Downloading virtualenv-20.10.0-py2.py3-none-any.whl (5.6 MB)
+     |████████████████████████████████| 5.6 MB 5.2 MB/s 
+Collecting pathlib2<3,>=2.3.3; python_version < "3.4" and sys_platform != "win32"
+  Downloading pathlib2-2.3.6-py2.py3-none-any.whl (17 kB)
+Collecting filelock<4,>=3.2
+  Downloading filelock-3.2.1-py2.py3-none-any.whl (9.3 kB)
+Collecting importlib-metadata>=0.12; python_version < "3.8"
+  Downloading importlib_metadata-2.1.2-py2.py3-none-any.whl (10 kB)
+Collecting importlib-resources>=1.0; python_version < "3.7"
+  Downloading importlib_resources-3.3.1-py2.py3-none-any.whl (26 kB)
+Collecting backports.entry-points-selectable>=1.0.4
+  Downloading backports.entry_points_selectable-1.1.1-py2.py3-none-any.whl (6.2 kB)
+Collecting platformdirs<3,>=2
+  Downloading platformdirs-2.0.2-py2.py3-none-any.whl (10 kB)
+Requirement already satisfied: six<2,>=1.9.0 in /usr/lib/python2.7/dist-packages (from virtualenv) (1.11.0)
+Collecting distlib<1,>=0.3.1
+  Downloading distlib-0.3.3-py2.py3-none-any.whl (496 kB)
+     |████████████████████████████████| 496 kB 79.3 MB/s 
+Collecting scandir; python_version < "3.5"
+  Downloading scandir-1.10.0.tar.gz (33 kB)
+Collecting contextlib2; python_version < "3"
+  Downloading contextlib2-0.6.0.post1-py2.py3-none-any.whl (9.8 kB)
+Collecting zipp>=0.5
+  Downloading zipp-1.2.0-py2.py3-none-any.whl (4.8 kB)
+Collecting configparser>=3.5; python_version < "3"
+  Downloading configparser-4.0.2-py2.py3-none-any.whl (22 kB)
+Collecting typing; python_version < "3.5"
+  Downloading typing-3.10.0.0-py2-none-any.whl (26 kB)
+Collecting singledispatch; python_version < "3.4"
+  Downloading singledispatch-3.7.0-py2.py3-none-any.whl (9.2 kB)
+Building wheels for collected packages: scandir
+  Building wheel for scandir (setup.py) ... done
+  Created wheel for scandir: filename=scandir-1.10.0-cp27-cp27mu-linux_x86_64.whl size=36329 sha256=aadf7050287310ba475eff768976b7f5f24e6098a06b2c629245b0ddbbf14a4d
+  Stored in directory: /tmp/pip-ephem-wheel-cache-tmYsri/wheels/58/2c/26/52406f7d1f19bcc47a6fbd1037a5f293492f5cf1d58c539edb
+Successfully built scandir
+Installing collected packages: scandir, pathlib2, filelock, contextlib2, zipp, configparser, importlib-metadata, typing, singledispatch, importlib-resources, backports.entry-points-selectable, platformdirs, distlib, virtualenv
+Successfully installed backports.entry-points-selectable-1.1.1 configparser-4.0.2 contextlib2-0.6.0.post1 distlib-0.3.3 filelock-3.2.1 importlib-metadata-2.1.2 importlib-resources-3.3.1 pathlib2-2.3.6 platformdirs-2.0.2 scandir-1.10.0 singledispatch-3.7.0 typing-3.10.0.0 virtualenv-20.10.0 zipp-1.2.0
+++ which virtualenv
++ VIRTUALENV=/usr/local/bin/virtualenv
++ ldconfig /usr/local/lib/
++ bash install_mongo.sh
++ '[' -f /etc/debian_version ']'
+++ lsb_release -r -s
++ '[' 18.04 == 14.04 ']'
+++ lsb_release -r -s
++ '[' 18.04 == 16.04 ']'
+++ lsb_release -r -s
++ '[' 18.04 == 18.04 ']'
++ ./install_mongodb_ub18.sh
++ apt update
+Hit:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease        
+Reading package lists... Done                      
+Building dependency tree       
+Reading state information... Done
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
++ apt install -y mongodb
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1
+  libboost-program-options1.65.1 libboost-system1.65.1
+  libgoogle-perftools4 libpcap0.8 libpcrecpp0v5 libsnappy1v5
+  libstemmer0d libtcmalloc-minimal4 libunwind8 libyaml-cpp0.5v5
+  mongo-tools mongodb-clients mongodb-server mongodb-server-core
+The following NEW packages will be installed:
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1
+  libboost-program-options1.65.1 libboost-system1.65.1
+  libgoogle-perftools4 libpcap0.8 libpcrecpp0v5 libsnappy1v5
+  libstemmer0d libtcmalloc-minimal4 libunwind8 libyaml-cpp0.5v5
+  mongo-tools mongodb mongodb-clients mongodb-server mongodb-server-core
+0 upgraded, 17 newly installed, 0 to remove and 3 not upgraded.
+Need to get 53.7 MB of archives.
+After this operation, 218 MB of additional disk space will be used.
+Get:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpcap0.8 amd64 1.8.1-6ubuntu1.18.04.2 [118 kB]
+Get:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libboost-system1.65.1 amd64 1.65.1+dfsg-0ubuntu5 [10.5 kB]
+Get:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libboost-filesystem1.65.1 amd64 1.65.1+dfsg-0ubuntu5 [40.3 kB]
+Get:4 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libboost-iostreams1.65.1 amd64 1.65.1+dfsg-0ubuntu5 [29.2 kB]
+Get:5 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libboost-program-options1.65.1 amd64 1.65.1+dfsg-0ubuntu5 [137 kB]
+Get:6 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libtcmalloc-minimal4 amd64 2.5-2.2ubuntu3 [91.6 kB]
+Get:7 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libunwind8 amd64 1.2.1-8 [47.5 kB]
+Get:8 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libgoogle-perftools4 amd64 2.5-2.2ubuntu3 [190 kB]
+Get:9 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libpcrecpp0v5 amd64 2:8.39-9 [15.3 kB]
+Get:10 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libstemmer0d amd64 0+svn585-1build1 [62.5 kB]
+Get:11 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/universe amd64 libyaml-cpp0.5v5 amd64 0.5.2-4ubuntu1 [150 kB]
+Get:12 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/universe amd64 mongo-tools amd64 3.6.3-0ubuntu1 [12.3 MB]
+Get:13 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libsnappy1v5 amd64 1.1.7-1 [16.0 kB]
+Get:14 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mongodb-clients amd64 1:3.6.3-0ubuntu1.4 [20.2 MB]
+Get:15 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mongodb-server-core amd64 1:3.6.3-0ubuntu1.4 [20.3 MB]
+Get:16 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mongodb-server all 1:3.6.3-0ubuntu1.4 [12.6 kB]
+Get:17 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mongodb amd64 1:3.6.3-0ubuntu1.4 [10.2 kB]
+Fetched 53.7 MB in 1s (50.6 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libpcap0.8:amd64.
+(Reading database ... 59064 files and directories currently installed.)
+Preparing to unpack .../00-libpcap0.8_1.8.1-6ubuntu1.18.04.2_amd64.deb ...
+Unpacking libpcap0.8:amd64 (1.8.1-6ubuntu1.18.04.2) ...
+Selecting previously unselected package libboost-system1.65.1:amd64.
+Preparing to unpack .../01-libboost-system1.65.1_1.65.1+dfsg-0ubuntu5_amd6
+4.deb ...
+Unpacking libboost-system1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Selecting previously unselected package libboost-filesystem1.65.1:amd64.
+Preparing to unpack .../02-libboost-filesystem1.65.1_1.65.1+dfsg-0ubuntu5_
+amd64.deb ...
+Unpacking libboost-filesystem1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Selecting previously unselected package libboost-iostreams1.65.1:amd64.
+Preparing to unpack .../03-libboost-iostreams1.65.1_1.65.1+dfsg-0ubuntu5_a
+md64.deb ...
+Unpacking libboost-iostreams1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Selecting previously unselected package libboost-program-options1.65.1:amd
+64.
+Preparing to unpack .../04-libboost-program-options1.65.1_1.65.1+dfsg-0ubu
+ntu5_amd64.deb ...
+Unpacking libboost-program-options1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Selecting previously unselected package libtcmalloc-minimal4.
+Preparing to unpack .../05-libtcmalloc-minimal4_2.5-2.2ubuntu3_amd64.deb .
+..
+Unpacking libtcmalloc-minimal4 (2.5-2.2ubuntu3) ...
+Selecting previously unselected package libunwind8:amd64.
+Preparing to unpack .../06-libunwind8_1.2.1-8_amd64.deb ...
+Unpacking libunwind8:amd64 (1.2.1-8) ...
+Selecting previously unselected package libgoogle-perftools4.
+Preparing to unpack .../07-libgoogle-perftools4_2.5-2.2ubuntu3_amd64.deb .
+..
+Unpacking libgoogle-perftools4 (2.5-2.2ubuntu3) ...
+Selecting previously unselected package libpcrecpp0v5:amd64.
+Preparing to unpack .../08-libpcrecpp0v5_2%3a8.39-9_amd64.deb ...
+Unpacking libpcrecpp0v5:amd64 (2:8.39-9) ...
+Selecting previously unselected package libstemmer0d:amd64.
+Preparing to unpack .../09-libstemmer0d_0+svn585-1build1_amd64.deb ...
+Unpacking libstemmer0d:amd64 (0+svn585-1build1) ...
+Selecting previously unselected package libyaml-cpp0.5v5:amd64.
+Preparing to unpack .../10-libyaml-cpp0.5v5_0.5.2-4ubuntu1_amd64.deb ...
+Unpacking libyaml-cpp0.5v5:amd64 (0.5.2-4ubuntu1) ...
+Selecting previously unselected package mongo-tools.
+Preparing to unpack .../11-mongo-tools_3.6.3-0ubuntu1_amd64.deb ...
+Unpacking mongo-tools (3.6.3-0ubuntu1) ...
+Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../12-libsnappy1v5_1.1.7-1_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.7-1) ...
+Selecting previously unselected package mongodb-clients.
+Preparing to unpack .../13-mongodb-clients_1%3a3.6.3-0ubuntu1.4_amd64.deb 
+...
+Unpacking mongodb-clients (1:3.6.3-0ubuntu1.4) ...
+Selecting previously unselected package mongodb-server-core.
+Preparing to unpack .../14-mongodb-server-core_1%3a3.6.3-0ubuntu1.4_amd64.
+deb ...
+Unpacking mongodb-server-core (1:3.6.3-0ubuntu1.4) ...
+Selecting previously unselected package mongodb-server.
+Preparing to unpack .../15-mongodb-server_1%3a3.6.3-0ubuntu1.4_all.deb ...
+Unpacking mongodb-server (1:3.6.3-0ubuntu1.4) ...
+Selecting previously unselected package mongodb.
+Preparing to unpack .../16-mongodb_1%3a3.6.3-0ubuntu1.4_amd64.deb ...
+Unpacking mongodb (1:3.6.3-0ubuntu1.4) ...
+Setting up libboost-iostreams1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Setting up libstemmer0d:amd64 (0+svn585-1build1) ...
+Setting up libboost-system1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Setting up libtcmalloc-minimal4 (2.5-2.2ubuntu3) ...
+Setting up libunwind8:amd64 (1.2.1-8) ...
+Setting up libsnappy1v5:amd64 (1.1.7-1) ...
+Setting up libpcrecpp0v5:amd64 (2:8.39-9) ...
+Setting up libyaml-cpp0.5v5:amd64 (0.5.2-4ubuntu1) ...
+Setting up libboost-program-options1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Setting up libpcap0.8:amd64 (1.8.1-6ubuntu1.18.04.2) ...
+Setting up libboost-filesystem1.65.1:amd64 (1.65.1+dfsg-0ubuntu5) ...
+Setting up libgoogle-perftools4 (2.5-2.2ubuntu3) ...
+Setting up mongodb-server-core (1:3.6.3-0ubuntu1.4) ...
+Setting up mongo-tools (3.6.3-0ubuntu1) ...
+Setting up mongodb-clients (1:3.6.3-0ubuntu1.4) ...
+Setting up mongodb-server (1:3.6.3-0ubuntu1.4) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/mongodb.servic
+e → /lib/systemd/system/mongodb.service.
+Setting up mongodb (1:3.6.3-0ubuntu1.4) ...
+Processing triggers for systemd (237-3ubuntu10.52) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
++ /usr/local/bin/pip install virtualenv
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Requirement already satisfied: virtualenv in /usr/local/lib/python2.7/dist-packages (20.10.0)
+Requirement already satisfied: pathlib2<3,>=2.3.3; python_version < "3.4" and sys_platform != "win32" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.3.6)
+Requirement already satisfied: filelock<4,>=3.2 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (3.2.1)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.1.2)
+Requirement already satisfied: importlib-resources>=1.0; python_version < "3.7" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (3.3.1)
+Requirement already satisfied: backports.entry-points-selectable>=1.0.4 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (1.1.1)
+Requirement already satisfied: platformdirs<3,>=2 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.0.2)
+Requirement already satisfied: six<2,>=1.9.0 in /usr/lib/python2.7/dist-packages (from virtualenv) (1.11.0)
+Requirement already satisfied: distlib<1,>=0.3.1 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (0.3.3)
+Requirement already satisfied: scandir; python_version < "3.5" in /usr/local/lib/python2.7/dist-packages (from pathlib2<3,>=2.3.3; python_version < "3.4" and sys_platform != "win32"->virtualenv) (1.10.0)
+Requirement already satisfied: contextlib2; python_version < "3" in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (0.6.0.post1)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (1.2.0)
+Requirement already satisfied: configparser>=3.5; python_version < "3" in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (4.0.2)
+Requirement already satisfied: typing; python_version < "3.5" in /usr/local/lib/python2.7/dist-packages (from importlib-resources>=1.0; python_version < "3.7"->virtualenv) (3.10.0.0)
+Requirement already satisfied: singledispatch; python_version < "3.4" in /usr/local/lib/python2.7/dist-packages (from importlib-resources>=1.0; python_version < "3.7"->virtualenv) (3.7.0)
++ cd /tmp
++ wget https://github.com/pwnlandia/hpfeeds/releases/download/libev-4.15/libev-4.15.tar.gz
+--2021-11-13 22:34:49--  https://github.com/pwnlandia/hpfeeds/releases/download/libev-4.15/libev-4.15.tar.gz
+Resolving github.com (github.com)... 140.82.112.4
+Connecting to github.com (github.com)|140.82.112.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-releases.githubusercontent.com/19497030/a34bec0e-375d-11e4-9eca-81df58f5c628?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211113T223449Z&X-Amz-Expires=300&X-Amz-Signature=79d883592577e54857c0d222efaa36b67106f2db9af7c2f4e8541d7d508e224e&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=19497030&response-content-disposition=attachment%3B%20filename%3Dlibev-4.15.tar.gz&response-content-type=application%2Foctet-stream [following]
+--2021-11-13 22:34:49--  https://github-releases.githubusercontent.com/19497030/a34bec0e-375d-11e4-9eca-81df58f5c628?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211113T223449Z&X-Amz-Expires=300&X-Amz-Signature=79d883592577e54857c0d222efaa36b67106f2db9af7c2f4e8541d7d508e224e&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=19497030&response-content-disposition=attachment%3B%20filename%3Dlibev-4.15.tar.gz&response-content-type=application%2Foctet-stream
+Resolving github-releases.githubusercontent.com (github-releases.githubusercontent.com)... 185.199.108.154, 185.199.109.154, 185.199.110.154, ...
+Connecting to github-releases.githubusercontent.com (github-releases.githubusercontent.com)|185.199.108.154|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 513919 (502K) [application/octet-stream]
+Saving to: ‘libev-4.15.tar.gz’
+
+libev-4.15.tar.gz  100%[==============>] 501.87K  --.-KB/s    in 0.04s   
+
+2021-11-13 22:34:49 (12.1 MB/s) - ‘libev-4.15.tar.gz’ saved [513919/513919]
+
++ tar zxvf libev-4.15.tar.gz
+libev-4.15/
+libev-4.15/configure.ac
+libev-4.15/ev++.h
+libev-4.15/config.h.in
+libev-4.15/ev_vars.h
+libev-4.15/ltmain.sh
+libev-4.15/config.sub
+libev-4.15/ev_kqueue.c
+libev-4.15/Symbols.event
+libev-4.15/Makefile.am
+libev-4.15/event.c
+libev-4.15/autogen.sh
+libev-4.15/Changes
+libev-4.15/aclocal.m4
+libev-4.15/configure
+libev-4.15/depcomp
+libev-4.15/event.h
+libev-4.15/LICENSE
+libev-4.15/Symbols.ev
+libev-4.15/ev.c
+libev-4.15/Makefile.in
+libev-4.15/config.guess
+libev-4.15/ev.pod
+libev-4.15/README
+libev-4.15/ev.h
+libev-4.15/ev_epoll.c
+libev-4.15/install-sh
+libev-4.15/libev.m4
+libev-4.15/missing
+libev-4.15/ev_wrap.h
+libev-4.15/ev_port.c
+libev-4.15/ev_poll.c
+libev-4.15/mkinstalldirs
+libev-4.15/ev.3
+libev-4.15/ev_win32.c
+libev-4.15/ev_select.c
++ cd libev-4.15
++ ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+./configure: line 6133: /usr/bin/file: No such file or directory
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking sys/inotify.h usability... yes
+checking sys/inotify.h presence... yes
+checking for sys/inotify.h... yes
+checking sys/epoll.h usability... yes
+checking sys/epoll.h presence... yes
+checking for sys/epoll.h... yes
+checking sys/event.h usability... no
+checking sys/event.h presence... no
+checking for sys/event.h... no
+checking port.h usability... no
+checking port.h presence... no
+checking for port.h... no
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking sys/signalfd.h usability... yes
+checking sys/signalfd.h presence... yes
+checking for sys/signalfd.h... yes
+checking for inotify_init... yes
+checking for epoll_ctl... yes
+checking for kqueue... no
+checking for port_create... no
+checking for poll... yes
+checking for select... yes
+checking for eventfd... yes
+checking for signalfd... yes
+checking for clock_gettime... yes
+checking for nanosleep... yes
+checking for library containing floor... -lm
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
++ make
+make  all-am
+make[1]: Entering directory '/tmp/libev-4.15'
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.     -g -O3 -MT ev.lo -MD -MP -MF .deps/ev.Tpo -c -o ev.lo ev.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -g -O3 -MT ev.lo -MD -MP -MF .deps/ev.Tpo -c ev.c  -fPIC -DPIC -o .libs/ev.o
+ev.c:1531:31: warning: 'ev_default_loop_ptr' initialized and declared 'extern'
+   EV_API_DECL struct ev_loop *ev_default_loop_ptr = 0; /* needs to be initialised to make it a definition despite extern */
+                               ^~~~~~~~~~~~~~~~~~~
+ev.c: In function 'evpipe_write':
+ev.c:2160:11: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+           write (evpipe [1], &counter, sizeof (uint64_t));
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ev.c:2172:11: warning: ignoring return value of 'write', declared with attribute warn_unused_result [-Wunused-result]
+           write (evpipe [1], &(evpipe [1]), 1);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ev.c: In function 'pipecb':
+ev.c:2193:11: warning: ignoring return value of 'read', declared with attribute warn_unused_result [-Wunused-result]
+           read (evpipe [1], &counter, sizeof (uint64_t));
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ev.c:2207:11: warning: ignoring return value of 'read', declared with attribute warn_unused_result [-Wunused-result]
+           read (evpipe [0], &dummy, sizeof (dummy));
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -g -O3 -MT ev.lo -MD -MP -MF .deps/ev.Tpo -c ev.c -o ev.o >/dev/null 2>&1
+mv -f .deps/ev.Tpo .deps/ev.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I.     -g -O3 -MT event.lo -MD -MP -MF .deps/event.Tpo -c -o event.lo event.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -g -O3 -MT event.lo -MD -MP -MF .deps/event.Tpo -c event.c  -fPIC -DPIC -o .libs/event.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -g -O3 -MT event.lo -MD -MP -MF .deps/event.Tpo -c event.c -o event.o >/dev/null 2>&1
+mv -f .deps/event.Tpo .deps/event.Plo
+/bin/bash ./libtool --tag=CC   --mode=link gcc  -g -O3 -version-info 4:0:0  -o libev.la -rpath /usr/local/lib ev.lo event.lo  -lm 
+libtool: link: gcc -shared  -fPIC -DPIC  .libs/ev.o .libs/event.o   -lm  -O3   -Wl,-soname -Wl,libev.so.4 -o .libs/libev.so.4.0.0
+libtool: link: (cd ".libs" && rm -f "libev.so.4" && ln -s "libev.so.4.0.0" "libev.so.4")
+libtool: link: (cd ".libs" && rm -f "libev.so" && ln -s "libev.so.4.0.0" "libev.so")
+libtool: link: ar cru .libs/libev.a  ev.o event.o
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: ranlib .libs/libev.a
+libtool: link: ( cd ".libs" && rm -f "libev.la" && ln -s "../libev.la" "libev.la" )
+make[1]: Leaving directory '/tmp/libev-4.15'
++ make install
+make[1]: Entering directory '/tmp/libev-4.15'
+ /bin/mkdir -p '/usr/local/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libev.la '/usr/local/lib'
+libtool: install: /usr/bin/install -c .libs/libev.so.4.0.0 /usr/local/lib/libev.so.4.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libev.so.4.0.0 libev.so.4 || { rm -f libev.so.4 && ln -s libev.so.4.0.0 libev.so.4; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libev.so.4.0.0 libev.so || { rm -f libev.so && ln -s libev.so.4.0.0 libev.so; }; })
+libtool: install: /usr/bin/install -c .libs/libev.lai /usr/local/lib/libev.la
+libtool: install: /usr/bin/install -c .libs/libev.a /usr/local/lib/libev.a
+libtool: install: chmod 644 /usr/local/lib/libev.a
+libtool: install: ranlib /usr/local/lib/libev.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /bin/mkdir -p '/usr/local/include'
+ /usr/bin/install -c -m 644 ev.h ev++.h event.h '/usr/local/include'
+ /bin/mkdir -p '/usr/local/share/man/man3'
+ /usr/bin/install -c -m 644 ev.3 '/usr/local/share/man/man3'
+make[1]: Leaving directory '/tmp/libev-4.15'
++ ldconfig /usr/local/lib/
++ mkdir -p /opt
++ cd /opt
++ rm -rf /opt/hpfeeds
++ git clone https://github.com/pwnlandia/hpfeeds
+Cloning into 'hpfeeds'...
+remote: Enumerating objects: 958, done.
+remote: Total 958 (delta 0), reused 0 (delta 0), pack-reused 958
+Receiving objects: 100% (958/958), 792.99 KiB | 11.49 MiB/s, done.
+Resolving deltas: 100% (448/448), done.
++ chmod 755 -R hpfeeds
++ cd hpfeeds
++ /usr/local/bin/virtualenv -p /usr/bin/python env
+created virtual environment CPython2.7.17.final.0-64 in 752ms
+  creator CPython2Posix(dest=/opt/hpfeeds/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, wheel=bundle, setuptools=bundle, via=copy, app_data_dir=/home/surikoya/.local/share/virtualenv)
+    added seed packages: pip==20.3.4, setuptools==44.1.1, wheel==0.37.0
+  activators NushellActivator,PythonActivator,FishActivator,CShellActivator,PowerShellActivator,BashActivator
++ . env/bin/activate
+++ '[' env/bin/activate = ./install_hpfeeds.sh ']'
+++ deactivate nondestructive
+++ unset -f pydoc
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ hash -r
+++ '[' -z '' ']'
+++ unset VIRTUAL_ENV
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/opt/hpfeeds/env
+++ '[' linux-gnu = cygwin ']'
+++ '[' linux-gnu = msys ']'
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+++ PATH=/opt/hpfeeds/env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+++ export PATH
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ '[' x '!=' x ']'
++++ basename /opt/hpfeeds/env
+++ PS1='(env) '
+++ export PS1
+++ alias pydoc
+++ true
+++ hash -r
++ pip install cffi
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting cffi
+  Downloading cffi-1.15.0-cp27-cp27mu-manylinux1_x86_64.whl (393 kB)
+     |████████████████████████████████| 393 kB 5.1 MB/s 
+Collecting pycparser
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+     |████████████████████████████████| 118 kB 76.4 MB/s 
+Installing collected packages: pycparser, cffi
+Successfully installed cffi-1.15.0 pycparser-2.21
++ pip install pyopenssl==17.3.0
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting pyopenssl==17.3.0
+  Downloading pyOpenSSL-17.3.0-py2.py3-none-any.whl (51 kB)
+     |████████████████████████████████| 51 kB 4.9 MB/s 
+Collecting six>=1.5.2
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting cryptography>=1.9
+  Downloading cryptography-3.3.2-cp27-cp27mu-manylinux2010_x86_64.whl (2.6 MB)
+     |████████████████████████████████| 2.6 MB 9.9 MB/s 
+Collecting ipaddress; python_version < "3"
+  Downloading ipaddress-1.0.23-py2.py3-none-any.whl (18 kB)
+Requirement already satisfied: cffi>=1.12 in ./env/lib/python2.7/site-packages (from cryptography>=1.9->pyopenssl==17.3.0) (1.15.0)
+Collecting enum34; python_version < "3"
+  Downloading enum34-1.1.10-py2-none-any.whl (11 kB)
+Requirement already satisfied: pycparser in ./env/lib/python2.7/site-packages (from cffi>=1.12->cryptography>=1.9->pyopenssl==17.3.0) (2.21)
+Installing collected packages: six, ipaddress, enum34, cryptography, pyopenssl
+Successfully installed cryptography-3.3.2 enum34-1.1.10 ipaddress-1.0.23 pyopenssl-17.3.0 six-1.16.0
++ pip install pymongo
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting pymongo
+  Downloading pymongo-3.12.1-cp27-cp27mu-manylinux_2_5_x86_64.manylinux1_x86_64.whl (503 kB)
+     |████████████████████████████████| 503 kB 5.2 MB/s 
+Installing collected packages: pymongo
+Successfully installed pymongo-3.12.1
++ pip install -e git+https://github.com/couozu/pyev.git#egg=pyev
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Obtaining pyev from git+https://github.com/couozu/pyev.git#egg=pyev
+  Cloning https://github.com/couozu/pyev.git to ./env/src/pyev
+  Running command git clone -q https://github.com/couozu/pyev.git /opt/hpfeeds/env/src/pyev
+Installing collected packages: pyev
+  Running setup.py develop for pyev
+Successfully installed pyev
++ pip install -e git+https://github.com/pwnlandia/evnet.git#egg=evnet-dev
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Obtaining evnet-dev from git+https://github.com/pwnlandia/evnet.git#egg=evnet-dev
+  Cloning https://github.com/pwnlandia/evnet.git to ./env/src/evnet-dev
+  Running command git clone -q https://github.com/pwnlandia/evnet.git /opt/hpfeeds/env/src/evnet-dev
+  WARNING: Generating metadata for package evnet-dev produced metadata for project name evnet. Fix your #egg=evnet-dev fragments.
+Requirement already satisfied: pyev>=0.5.3-3.8 in ./env/src/pyev (from evnet) (0.9.0)
+Requirement already satisfied: pyopenssl in ./env/lib/python2.7/site-packages (from evnet) (17.3.0)
+Requirement already satisfied: six>=1.5.2 in ./env/lib/python2.7/site-packages (from pyopenssl->evnet) (1.16.0)
+Requirement already satisfied: cryptography>=1.9 in ./env/lib/python2.7/site-packages (from pyopenssl->evnet) (3.3.2)
+Requirement already satisfied: ipaddress; python_version < "3" in ./env/lib/python2.7/site-packages (from cryptography>=1.9->pyopenssl->evnet) (1.0.23)
+Requirement already satisfied: cffi>=1.12 in ./env/lib/python2.7/site-packages (from cryptography>=1.9->pyopenssl->evnet) (1.15.0)
+Requirement already satisfied: enum34; python_version < "3" in ./env/lib/python2.7/site-packages (from cryptography>=1.9->pyopenssl->evnet) (1.1.10)
+Requirement already satisfied: pycparser in ./env/lib/python2.7/site-packages (from cffi>=1.12->cryptography>=1.9->pyopenssl->evnet) (2.21)
+Installing collected packages: evnet
+  Running setup.py develop for evnet
+Successfully installed evnet
++ pip install .
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Processing /opt/hpfeeds
+Building wheels for collected packages: hpfeeds-threatstream
+  Building wheel for hpfeeds-threatstream (setup.py) ... done
+  Created wheel for hpfeeds-threatstream: filename=hpfeeds_threatstream-1.1-py2-none-any.whl size=17407 sha256=82c999bdcf10c456a2c94ad4aec1bbe0507fb8e9fbc161a3a6d4281f0cc9fb4a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-yJQi9C/wheels/52/5b/b4/5e2bab90fdc5258566d699cd9815cd73b674038b63be48e6ba
+Successfully built hpfeeds-threatstream
+Installing collected packages: hpfeeds-threatstream
+Successfully installed hpfeeds-threatstream-1.1
++ deactivate
++ unset -f pydoc
++ '[' -z _ ']'
++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
++ export PATH
++ unset _OLD_VIRTUAL_PATH
++ '[' -z '' ']'
++ hash -r
++ '[' -z _ ']'
++ PS1=
++ export PS1
++ unset _OLD_VIRTUAL_PS1
++ unset VIRTUAL_ENV
++ '[' '!' '' = nondestructive ']'
++ unset -f deactivate
++ mkdir -p /var/log/mhn
++ mkdir -p /etc/supervisor/
++ mkdir -p /etc/supervisor/conf.d
++ cat
++ ldconfig /usr/local/lib/
++ /etc/init.d/supervisor start
+[ ok ] Starting supervisor (via systemctl): supervisor.service.
++ sleep 5
++ supervisorctl update
+hpfeeds-broker: added process group
+++ date
++ echo '[Sat Nov 13 22:35:17 UTC 2021] ========= Installing menmosyne ========='
+[Sat Nov 13 22:35:17 UTC 2021] ========= Installing menmosyne =========
++ ./install_mnemosyne.sh
++++ readlink -f ./install_mnemosyne.sh
+++ dirname /opt/mhn/scripts/install_mnemosyne.sh
++ SCRIPTS=/opt/mhn/scripts
++ MHN_HOME=/opt/mhn/scripts/..
++ '[' -f /etc/debian_version ']'
++ OS=Debian
++ apt-get update
+Hit:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease        
+Reading package lists... Done                      
++ apt-get install -y git python-pip python-dev supervisor
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python-dev is already the newest version (2.7.15~rc1-1).
+supervisor is already the newest version (3.3.1-1.1).
+git is already the newest version (1:2.17.1-1ubuntu0.9).
+python-pip is already the newest version (9.0.1-2.3~ubuntu1.18.04.5).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
++ pip install virtualenv
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Requirement already satisfied: virtualenv in /usr/local/lib/python2.7/dist-packages (20.10.0)
+Requirement already satisfied: pathlib2<3,>=2.3.3; python_version < "3.4" and sys_platform != "win32" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.3.6)
+Requirement already satisfied: filelock<4,>=3.2 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (3.2.1)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.1.2)
+Requirement already satisfied: importlib-resources>=1.0; python_version < "3.7" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (3.3.1)
+Requirement already satisfied: backports.entry-points-selectable>=1.0.4 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (1.1.1)
+Requirement already satisfied: platformdirs<3,>=2 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.0.2)
+Requirement already satisfied: six<2,>=1.9.0 in /usr/lib/python2.7/dist-packages (from virtualenv) (1.11.0)
+Requirement already satisfied: distlib<1,>=0.3.1 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (0.3.3)
+Requirement already satisfied: scandir; python_version < "3.5" in /usr/local/lib/python2.7/dist-packages (from pathlib2<3,>=2.3.3; python_version < "3.4" and sys_platform != "win32"->virtualenv) (1.10.0)
+Requirement already satisfied: contextlib2; python_version < "3" in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (0.6.0.post1)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (1.2.0)
+Requirement already satisfied: configparser>=3.5; python_version < "3" in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (4.0.2)
+Requirement already satisfied: typing; python_version < "3.5" in /usr/local/lib/python2.7/dist-packages (from importlib-resources>=1.0; python_version < "3.7"->virtualenv) (3.10.0.0)
+Requirement already satisfied: singledispatch; python_version < "3.4" in /usr/local/lib/python2.7/dist-packages (from importlib-resources>=1.0; python_version < "3.7"->virtualenv) (3.7.0)
++ INSTALLER=apt-get
++ REPOPACKAGES=
+++ which python
++ PYTHON=/usr/bin/python
+++ which pip
++ PIP=/usr/local/bin/pip
++ /usr/local/bin/pip install virtualenv
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Requirement already satisfied: virtualenv in /usr/local/lib/python2.7/dist-packages (20.10.0)
+Requirement already satisfied: pathlib2<3,>=2.3.3; python_version < "3.4" and sys_platform != "win32" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.3.6)
+Requirement already satisfied: filelock<4,>=3.2 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (3.2.1)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.1.2)
+Requirement already satisfied: importlib-resources>=1.0; python_version < "3.7" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (3.3.1)
+Requirement already satisfied: backports.entry-points-selectable>=1.0.4 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (1.1.1)
+Requirement already satisfied: platformdirs<3,>=2 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.0.2)
+Requirement already satisfied: six<2,>=1.9.0 in /usr/lib/python2.7/dist-packages (from virtualenv) (1.11.0)
+Requirement already satisfied: distlib<1,>=0.3.1 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (0.3.3)
+Requirement already satisfied: scandir; python_version < "3.5" in /usr/local/lib/python2.7/dist-packages (from pathlib2<3,>=2.3.3; python_version < "3.4" and sys_platform != "win32"->virtualenv) (1.10.0)
+Requirement already satisfied: contextlib2; python_version < "3" in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (0.6.0.post1)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (1.2.0)
+Requirement already satisfied: configparser>=3.5; python_version < "3" in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (4.0.2)
+Requirement already satisfied: typing; python_version < "3.5" in /usr/local/lib/python2.7/dist-packages (from importlib-resources>=1.0; python_version < "3.7"->virtualenv) (3.10.0.0)
+Requirement already satisfied: singledispatch; python_version < "3.4" in /usr/local/lib/python2.7/dist-packages (from importlib-resources>=1.0; python_version < "3.7"->virtualenv) (3.7.0)
+++ which virtualenv
++ VIRTUALENV=/usr/local/bin/virtualenv
++ bash /opt/mhn/scripts/install_mongo.sh
++ '[' -f /etc/debian_version ']'
+++ lsb_release -r -s
++ '[' 18.04 == 14.04 ']'
+++ lsb_release -r -s
++ '[' 18.04 == 16.04 ']'
+++ lsb_release -r -s
++ '[' 18.04 == 18.04 ']'
++ ./install_mongodb_ub18.sh
++ apt update
+Hit:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease        
+Reading package lists... Done                      
+Building dependency tree       
+Reading state information... Done
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
++ apt install -y mongodb
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+mongodb is already the newest version (1:3.6.3-0ubuntu1.4).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
++ mkdir -p /opt
++ cd /opt/
++ rm -rf /opt/mnemosyne
++ git clone https://github.com/pwnlandia/mnemosyne.git
+Cloning into 'mnemosyne'...
+remote: Enumerating objects: 2159, done.
+remote: Total 2159 (delta 0), reused 0 (delta 0), pack-reused 2159
+Receiving objects: 100% (2159/2159), 1.04 MiB | 12.96 MiB/s, done.
+Resolving deltas: 100% (1364/1364), done.
++ cd mnemosyne
++ /usr/local/bin/virtualenv -p /usr/bin/python env
+created virtual environment CPython2.7.17.final.0-64 in 146ms
+  creator CPython2Posix(dest=/opt/mnemosyne/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, wheel=bundle, setuptools=bundle, via=copy, app_data_dir=/home/surikoya/.local/share/virtualenv)
+    added seed packages: pip==20.3.4, setuptools==44.1.1, wheel==0.37.0
+  activators NushellActivator,PythonActivator,FishActivator,CShellActivator,PowerShellActivator,BashActivator
++ . env/bin/activate
+++ '[' env/bin/activate = ./install_mnemosyne.sh ']'
+++ deactivate nondestructive
+++ unset -f pydoc
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ hash -r
+++ '[' -z '' ']'
+++ unset VIRTUAL_ENV
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/opt/mnemosyne/env
+++ '[' linux-gnu = cygwin ']'
+++ '[' linux-gnu = msys ']'
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+++ PATH=/opt/mnemosyne/env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+++ export PATH
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ '[' x '!=' x ']'
++++ basename /opt/mnemosyne/env
+++ PS1='(env) '
+++ export PS1
+++ alias pydoc
+++ true
+++ hash -r
++ pip install -r requirements.txt
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting git+https://github.com/defnull/bottle/ (from -r requirements.txt (line 5))
+  Cloning https://github.com/defnull/bottle/ to /tmp/pip-req-build-naQndt
+  Running command git clone -q https://github.com/defnull/bottle/ /tmp/pip-req-build-naQndt
+Collecting pymongo==2.7.2
+  Downloading pymongo-2.7.2.tar.gz (381 kB)
+     |████████████████████████████████| 381 kB 5.1 MB/s 
+Collecting gevent==1.0.2
+  Downloading gevent-1.0.2.tar.gz (1.7 MB)
+     |████████████████████████████████| 1.7 MB 78.0 MB/s 
+Collecting bottle-mongodb==0.2.1
+  Downloading bottle-mongodb-0.2.1.tar.gz (2.0 kB)
+Collecting bottle-cork==0.6
+  Downloading bottle-cork-0.6.tar.gz (30 kB)
+Collecting Beaker==1.6.4
+  Downloading Beaker-1.6.4.tar.gz (54 kB)
+     |████████████████████████████████| 54 kB 52.2 MB/s 
+Collecting WebTest==2.0.16
+  Downloading WebTest-2.0.16.zip (88 kB)
+     |████████████████████████████████| 88 kB 68.3 MB/s 
+Collecting pycrypto==2.6.1
+  Downloading pycrypto-2.6.1.tar.gz (446 kB)
+     |████████████████████████████████| 446 kB 78.8 MB/s 
+Collecting python-magic==0.4.6
+  Downloading python-magic-0.4.6.tar.gz (3.5 kB)
+Collecting nose==1.3.4
+  Downloading nose-1.3.4-py2-none-any.whl (154 kB)
+     |████████████████████████████████| 154 kB 76.5 MB/s 
+Collecting kumo==0.2
+  Downloading kumo-0.2.tar.gz (2.2 kB)
+Obtaining hpfeeds-dev from git+https://github.com/threatstream/hpfeeds/#egg=hpfeeds-dev (from -r requirements.txt (line 12))
+  Cloning https://github.com/threatstream/hpfeeds/ to ./env/src/hpfeeds-dev
+  Running command git clone -q https://github.com/threatstream/hpfeeds/ /opt/mnemosyne/env/src/hpfeeds-dev
+  WARNING: Generating metadata for package hpfeeds-dev produced metadata for project name hpfeeds-threatstream. Fix your #egg=hpfeeds-dev fragments.
+Collecting Sphinx==1.2.3
+  Downloading Sphinx-1.2.3-py2-none-any.whl (1.9 MB)
+     |████████████████████████████████| 1.9 MB 78.2 MB/s 
+Collecting sphinxcontrib-httpdomain==1.3.0
+  Downloading sphinxcontrib_httpdomain-1.3.0-py2.py3-none-any.whl (15 kB)
+Collecting greenlet>=0.4.7
+  Downloading greenlet-1.1.2-cp27-cp27mu-manylinux2010_x86_64.whl (154 kB)
+     |████████████████████████████████| 154 kB 77.1 MB/s 
+Requirement already satisfied: setuptools in ./env/lib/python2.7/site-packages (from bottle-cork==0.6->-r requirements.txt (line 4)) (44.1.1)
+Collecting six
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting WebOb>=1.2
+  Downloading WebOb-1.8.7-py2.py3-none-any.whl (114 kB)
+     |████████████████████████████████| 114 kB 79.9 MB/s 
+Collecting waitress>=0.8.5
+  Downloading waitress-1.4.4-py2.py3-none-any.whl (58 kB)
+     |████████████████████████████████| 58 kB 68.1 MB/s 
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.9.3-py2-none-any.whl (115 kB)
+     |████████████████████████████████| 115 kB 79.9 MB/s 
+Collecting requests
+  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+     |████████████████████████████████| 62 kB 30.2 MB/s 
+Collecting docutils>=0.7
+  Downloading docutils-0.18-py2.py3-none-any.whl (569 kB)
+     |████████████████████████████████| 569 kB 76.3 MB/s 
+Collecting Pygments>=1.2
+  Downloading Pygments-2.5.2-py2.py3-none-any.whl (896 kB)
+     |████████████████████████████████| 896 kB 76.1 MB/s 
+Collecting Jinja2>=2.3
+  Downloading Jinja2-2.11.3-py2.py3-none-any.whl (125 kB)
+     |████████████████████████████████| 125 kB 77.2 MB/s 
+Collecting soupsieve<2.0,>1.2; python_version < "3.0"
+  Downloading soupsieve-1.9.6-py2.py3-none-any.whl (33 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+     |████████████████████████████████| 149 kB 71.3 MB/s 
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+     |████████████████████████████████| 138 kB 76.0 MB/s 
+Collecting chardet<5,>=3.0.2; python_version < "3"
+  Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+     |████████████████████████████████| 178 kB 76.9 MB/s 
+Collecting idna<3,>=2.5; python_version < "3"
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+     |████████████████████████████████| 58 kB 65.0 MB/s 
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp27-cp27mu-manylinux1_x86_64.whl (24 kB)
+Collecting backports.functools-lru-cache; python_version < "3"
+  Downloading backports.functools_lru_cache-1.6.4-py2.py3-none-any.whl (5.9 kB)
+Building wheels for collected packages: pymongo, gevent, bottle-mongodb, bottle-cork, Beaker, WebTest, pycrypto, python-magic, kumo, bottle
+  Building wheel for pymongo (setup.py) ... done
+  Created wheel for pymongo: filename=pymongo-2.7.2-cp27-cp27mu-linux_x86_64.whl size=247453 sha256=0453ff6b8fe1176c424a7cbbf25f1223ac6e9510fe0acd3f8e04539df9333d0b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/9b/1d/fd/1f1899fc437e6fb234c2f8aa0322449812e7827c2ffe5d2bf1
+  Building wheel for gevent (setup.py) ... done
+  Created wheel for gevent: filename=gevent-1.0.2-cp27-cp27mu-linux_x86_64.whl size=585776 sha256=a74c0c8a4ff66fc9598b9f6d586a44cfe2a5c97daf5fd85a0a901ee0a7966edc
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/b5/07/1a/dc0979cb78cab3b8a0fcf468431b190728f923faead0d3ad45
+  Building wheel for bottle-mongodb (setup.py) ... done
+  Created wheel for bottle-mongodb: filename=bottle_mongodb-0.2.1-py2-none-any.whl size=2650 sha256=2de43543162f7600f22071bdbf1dcce509fb66ce4812e27b961034dc73bd2706
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/22/63/9f/93a8e18d1b3626d9e90e8f54e32cd6e40007f54bb4e1db2fe9
+  Building wheel for bottle-cork (setup.py) ... done
+  Created wheel for bottle-cork: filename=bottle_cork-0.6-py2-none-any.whl size=8908 sha256=59fc982de90e45f2e7efeef584d5a2c4552b5ddaa5a98e9baca16129e28877e8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/c4/c6/b1/973b95d3ac7b83820fe3c50def88871dcf66f64c9762140da0
+  Building wheel for Beaker (setup.py) ... done
+  Created wheel for Beaker: filename=Beaker-1.6.4-py2-none-any.whl size=44667 sha256=3fcd05b3f2dcbcdf5146c9df27d8655d6413f4d5cf69f5f82ce6fbbce0902ce0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/01/d5/60/1d8c61c58db173d49f97f9353c53b0f1ba7f3861cea7aa551a
+  Building wheel for WebTest (setup.py) ... done
+  Created wheel for WebTest: filename=WebTest-2.0.16-py2-none-any.whl size=31965 sha256=bf14e76333641bf3ee61bcff788c26aefd6e0cffd3fbd5f6186983a3fabfdb42
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/29/aa/7a/e2ed8d224c7d135be7ee7c2225b824d87c673d277521f15244
+  Building wheel for pycrypto (setup.py) ... done
+  Created wheel for pycrypto: filename=pycrypto-2.6.1-cp27-cp27mu-linux_x86_64.whl size=501911 sha256=659b2cf535ef64ecf82964f34ffe9f97c6c806ad2e39d8c17e438df2071b269b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/b6/e6/c8/d1eca13628952ceec1d40d96e0a7a1380460d2349ce0b85312
+  Building wheel for python-magic (setup.py) ... done
+  Created wheel for python-magic: filename=python_magic-0.4.6-py2-none-any.whl size=3886 sha256=394ed9c0b6f1e0bbaa833526faa628e299d3351fe5cca1dc68305205eda751e2
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/98/7d/8c/457f09fa75c55952ca5f2e80e4af9c76961677195798df2337
+  Building wheel for kumo (setup.py) ... done
+  Created wheel for kumo: filename=kumo-0.2-py2-none-any.whl size=2652 sha256=2195d42a9c512da85b50617979c57c50c0582ad28b55eee9344a05606ef91781
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/31/dd/0d/7aee9c97f8c1f425b071ff4e809b0d2168a12f598847ba070a
+  Building wheel for bottle (setup.py) ... done
+  Created wheel for bottle: filename=bottle-0.13.dev0-py2.py3-none-any.whl size=99457 sha256=758a9e2f21cd7352ef12cac5b34263c73c5dc809957dd31f8823b939a5fdd22f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-YCYLOs/wheels/74/60/2d/b45120616e3b805dfea14f06b9be4a627309cd8e57351f75f0
+Successfully built pymongo gevent bottle-mongodb bottle-cork Beaker WebTest pycrypto python-magic kumo bottle
+Installing collected packages: pymongo, greenlet, gevent, bottle-mongodb, bottle, Beaker, bottle-cork, six, WebOb, waitress, backports.functools-lru-cache, soupsieve, beautifulsoup4, WebTest, pycrypto, python-magic, nose, certifi, urllib3, chardet, idna, requests, kumo, hpfeeds-threatstream, docutils, Pygments, MarkupSafe, Jinja2, Sphinx, sphinxcontrib-httpdomain
+  Running setup.py develop for hpfeeds-threatstream
+Successfully installed Beaker-1.6.4 Jinja2-2.11.3 MarkupSafe-1.1.1 Pygments-2.5.2 Sphinx-1.2.3 WebOb-1.8.7 WebTest-2.0.16 backports.functools-lru-cache-1.6.4 beautifulsoup4-4.9.3 bottle-0.13.dev0 bottle-cork-0.6 bottle-mongodb-0.2.1 certifi-2021.10.8 chardet-4.0.0 docutils-0.18 gevent-1.0.2 greenlet-1.1.2 hpfeeds-threatstream idna-2.10 kumo-0.2 nose-1.3.4 pycrypto-2.6.1 pymongo-2.7.2 python-magic-0.4.6 requests-2.26.0 six-1.16.0 soupsieve-1.9.6 sphinxcontrib-httpdomain-1.3.0 urllib3-1.26.7 waitress-1.4.4
++ chmod 755 -R .
++ IDENT=mnemosyne
+++ python -c 'import uuid;print str(uuid.uuid4()).replace("-","")'
++ SECRET=829595e931184c24a268e0703459100f
++ CHANNELS=amun.events,conpot.events,thug.events,beeswarm.hive,dionaea.capture,dionaea.connections,thug.files,beeswarn.feeder,cuckoo.analysis,kippo.sessions,cowrie.sessions,glastopf.events,glastopf.files,mwbinary.dionaea.sensorunique,snort.alerts,wordpot.events,p0f.events,suricata.events,shockpot.events,elastichoney.events,drupot.events,agave.events
++ cat
++ deactivate
++ unset -f pydoc
++ '[' -z _ ']'
++ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
++ export PATH
++ unset _OLD_VIRTUAL_PATH
++ '[' -z '' ']'
++ hash -r
++ '[' -z _ ']'
++ PS1=
++ export PS1
++ unset _OLD_VIRTUAL_PS1
++ unset VIRTUAL_ENV
++ '[' '!' '' = nondestructive ']'
++ unset -f deactivate
++ . /opt/hpfeeds/env/bin/activate
+++ '[' /opt/hpfeeds/env/bin/activate = ./install_mnemosyne.sh ']'
+++ deactivate nondestructive
+++ unset -f pydoc
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ hash -r
+++ '[' -z '' ']'
+++ unset VIRTUAL_ENV
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/opt/hpfeeds/env
+++ '[' linux-gnu = cygwin ']'
+++ '[' linux-gnu = msys ']'
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+++ PATH=/opt/hpfeeds/env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+++ export PATH
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ '[' x '!=' x ']'
++++ basename /opt/hpfeeds/env
+++ PS1='(env) '
+++ export PS1
+++ alias pydoc
+++ true
+++ hash -r
++ python /opt/hpfeeds/broker/add_user.py mnemosyne 829595e931184c24a268e0703459100f '' amun.events,conpot.events,thug.events,beeswarm.hive,dionaea.capture,dionaea.connections,thug.files,beeswarn.feeder,cuckoo.analysis,kippo.sessions,cowrie.sessions,glastopf.events,glastopf.files,mwbinary.dionaea.sensorunique,snort.alerts,wordpot.events,p0f.events,suricata.events,shockpot.events,elastichoney.events,drupot.events,agave.events
+/opt/hpfeeds/env/lib/python2.7/site-packages/OpenSSL/crypto.py:12: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography import x509
+inserted {'subscribe': ['amun.events', 'conpot.events', 'thug.events', 'beeswarm.hive', 'dionaea.capture', 'dionaea.connections', 'thug.files', 'beeswarn.feeder', 'cuckoo.analysis', 'kippo.sessions', 'cowrie.sessions', 'glastopf.events', 'glastopf.files', 'mwbinary.dionaea.sensorunique', 'snort.alerts', 'wordpot.events', 'p0f.events', 'suricata.events', 'shockpot.events', 'elastichoney.events', 'drupot.events', 'agave.events'], 'secret': '829595e931184c24a268e0703459100f', 'identifier': 'mnemosyne', 'publish': []}
++ mkdir -p /var/log/mhn/
++ cat
++ supervisorctl update
+mnemosyne: added process group
+++ date
++ echo '[Sat Nov 13 22:36:28 UTC 2021] ========= Installing Honeymap ========='
+[Sat Nov 13 22:36:28 UTC 2021] ========= Installing Honeymap =========
++ ./install_honeymap.sh
++++ readlink -f ./install_honeymap.sh
+++ dirname /opt/mhn/scripts/install_honeymap.sh
++ SCRIPTDIR=/opt/mhn/scripts
++ MHN_HOME=/opt/mhn/scripts/..
++ '[' -f /etc/debian_version ']'
++ apt-get update
+Hit:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease        
+Reading package lists... Done                                            
++ apt-get install -y git mercurial make coffeescript libgeoip-dev supervisor
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+make is already the newest version (4.1-9.1ubuntu1).
+make set to manually installed.
+supervisor is already the newest version (3.3.1-1.1).
+git is already the newest version (1:2.17.1-1ubuntu0.9).
+The following additional packages will be installed:
+  geoip-bin geoip-database libc-ares2 libgeoip1 libhttp-parser2.7.1
+  libicu60 mercurial-common nodejs nodejs-doc
+Suggested packages:
+  libjs-coffeescript coffeescript-doc kdiff3 | kdiff3-qt | kompare
+  | meld | tkcvs | mgdiff qct python-mysqldb python-openssl
+  python-pygments wish
+The following NEW packages will be installed:
+  coffeescript geoip-bin geoip-database libc-ares2 libgeoip-dev
+  libgeoip1 libhttp-parser2.7.1 libicu60 mercurial mercurial-common
+  nodejs nodejs-doc
+0 upgraded, 12 newly installed, 0 to remove and 3 not upgraded.
+Need to get 18.5 MB of archives.
+After this operation, 77.2 MB of additional disk space will be used.
+Get:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libicu60 amd64 60.2-3ubuntu3.2 [8050 kB]
+Get:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 geoip-database all 20180315-1 [2090 kB]
+Get:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libgeoip1 amd64 1.6.12-1 [71.8 kB]
+Get:4 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 geoip-bin amd64 1.6.12-1 [46.5 kB]
+Get:5 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libgeoip-dev amd64 1.6.12-1 [77.2 kB]
+Get:6 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mercurial-common all 4.5.3-1ubuntu2.2 [2199 kB]
+Get:7 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 mercurial amd64 4.5.3-1ubuntu2.2 [193 kB]
+Get:8 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 nodejs-doc all 8.10.0~dfsg-2ubuntu0.4 [752 kB]
+Get:9 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libc-ares2 amd64 1.14.0-1ubuntu0.1 [37.5 kB]
+Get:10 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libhttp-parser2.7.1 amd64 2.7.1-2 [20.6 kB]
+Get:11 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 nodejs amd64 8.10.0~dfsg-2ubuntu0.4 [4796 kB]
+Get:12 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/universe amd64 coffeescript all 1.12.7~dfsg-3 [136 kB]
+Fetched 18.5 MB in 0s (44.8 MB/s)  
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libicu60:amd64.
+(Reading database ... 59204 files and directories currently installed.)
+Preparing to unpack .../00-libicu60_60.2-3ubuntu3.2_amd64.deb ...
+Unpacking libicu60:amd64 (60.2-3ubuntu3.2) ...
+Selecting previously unselected package geoip-database.
+Preparing to unpack .../01-geoip-database_20180315-1_all.deb ...
+Unpacking geoip-database (20180315-1) ...
+Selecting previously unselected package libgeoip1:amd64.
+Preparing to unpack .../02-libgeoip1_1.6.12-1_amd64.deb ...
+Unpacking libgeoip1:amd64 (1.6.12-1) ...
+Selecting previously unselected package geoip-bin.
+Preparing to unpack .../03-geoip-bin_1.6.12-1_amd64.deb ...
+Unpacking geoip-bin (1.6.12-1) ...
+Selecting previously unselected package libgeoip-dev.
+Preparing to unpack .../04-libgeoip-dev_1.6.12-1_amd64.deb ...
+Unpacking libgeoip-dev (1.6.12-1) ...
+Selecting previously unselected package mercurial-common.
+Preparing to unpack .../05-mercurial-common_4.5.3-1ubuntu2.2_all.deb ...
+Unpacking mercurial-common (4.5.3-1ubuntu2.2) ...
+Selecting previously unselected package mercurial.
+Preparing to unpack .../06-mercurial_4.5.3-1ubuntu2.2_amd64.deb ...
+Unpacking mercurial (4.5.3-1ubuntu2.2) ...
+Selecting previously unselected package nodejs-doc.
+Preparing to unpack .../07-nodejs-doc_8.10.0~dfsg-2ubuntu0.4_all.deb ...
+Unpacking nodejs-doc (8.10.0~dfsg-2ubuntu0.4) ...
+Selecting previously unselected package libc-ares2:amd64.
+Preparing to unpack .../08-libc-ares2_1.14.0-1ubuntu0.1_amd64.deb ...
+Unpacking libc-ares2:amd64 (1.14.0-1ubuntu0.1) ...
+Selecting previously unselected package libhttp-parser2.7.1:amd64.
+Preparing to unpack .../09-libhttp-parser2.7.1_2.7.1-2_amd64.deb ...
+Unpacking libhttp-parser2.7.1:amd64 (2.7.1-2) ...
+Selecting previously unselected package nodejs.
+Preparing to unpack .../10-nodejs_8.10.0~dfsg-2ubuntu0.4_amd64.deb ...
+Unpacking nodejs (8.10.0~dfsg-2ubuntu0.4) ...
+Selecting previously unselected package coffeescript.
+Preparing to unpack .../11-coffeescript_1.12.7~dfsg-3_all.deb ...
+Unpacking coffeescript (1.12.7~dfsg-3) ...
+Setting up nodejs-doc (8.10.0~dfsg-2ubuntu0.4) ...
+Setting up libhttp-parser2.7.1:amd64 (2.7.1-2) ...
+Setting up libicu60:amd64 (60.2-3ubuntu3.2) ...
+Setting up geoip-database (20180315-1) ...
+Setting up libgeoip1:amd64 (1.6.12-1) ...
+Setting up mercurial-common (4.5.3-1ubuntu2.2) ...
+Setting up mercurial (4.5.3-1ubuntu2.2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+
+Creating config file /etc/mercurial/hgrc.d/hgext.rc with new version
+Setting up libc-ares2:amd64 (1.14.0-1ubuntu0.1) ...
+Setting up nodejs (8.10.0~dfsg-2ubuntu0.4) ...
+update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/js.1.gz because associated file /usr/share/man/man1/nodejs.1.gz (of link group js) doesn't exist
+Setting up geoip-bin (1.6.12-1) ...
+Setting up coffeescript (1.12.7~dfsg-3) ...
+Setting up libgeoip-dev (1.6.12-1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
++ INSTALLER=apt-get
+++ uname -m
++ '[' x86_64 == x86_64 ']'
++ GO_PACKAGE=go1.12.1.linux-amd64.tar.gz
++ cd /usr/local/
++ wget https://storage.googleapis.com/golang/go1.12.1.linux-amd64.tar.gz
+--2021-11-13 22:36:37--  https://storage.googleapis.com/golang/go1.12.1.linux-amd64.tar.gz
+Resolving storage.googleapis.com (storage.googleapis.com)... 172.253.123.128, 142.250.98.128, 74.125.31.128, ...
+Connecting to storage.googleapis.com (storage.googleapis.com)|172.253.123.128|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 127906702 (122M) [application/octet-stream]
+Saving to: ‘go1.12.1.linux-amd64.tar.gz’
+
+go1.12.1.linux-amd 100%[==============>] 121.98M   238MB/s    in 0.5s    
+
+2021-11-13 22:36:38 (238 MB/s) - ‘go1.12.1.linux-amd64.tar.gz’ saved [127906702/127906702]
+
++ tar zxf go1.12.1.linux-amd64.tar.gz
++ rm go1.12.1.linux-amd64.tar.gz
++ cd /usr/bin/
++ for X in /usr/local/go/bin/*
++ echo /usr/local/go/bin/go
+/usr/local/go/bin/go
++ ln -s /usr/local/go/bin/go
++ for X in /usr/local/go/bin/*
++ echo /usr/local/go/bin/godoc
+/usr/local/go/bin/godoc
++ ln -s /usr/local/go/bin/godoc
++ for X in /usr/local/go/bin/*
++ echo /usr/local/go/bin/gofmt
+/usr/local/go/bin/gofmt
++ ln -s /usr/local/go/bin/gofmt
+++ python -c 'import uuid;print str(uuid.uuid4()).replace("-","")'
++ SECRET=460fbb75194041b08bedd58736e6047f
++ /opt/hpfeeds/env/bin/python /opt/hpfeeds/broker/add_user.py honeymap 460fbb75194041b08bedd58736e6047f '' geoloc.events
+/opt/hpfeeds/env/lib/python2.7/site-packages/OpenSSL/crypto.py:12: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography import x509
+inserted {'subscribe': ['geoloc.events'], 'secret': '460fbb75194041b08bedd58736e6047f', 'identifier': 'honeymap', 'publish': []}
++ cd /opt
++ git clone https://github.com/pwnlandia/honeymap.git
+Cloning into 'honeymap'...
+remote: Enumerating objects: 861, done.
+remote: Total 861 (delta 0), reused 0 (delta 0), pack-reused 861
+Receiving objects: 100% (861/861), 1.12 MiB | 13.99 MiB/s, done.
+Resolving deltas: 100% (431/431), done.
++ cd /opt/honeymap/server
++ cat
++ cd ..
++ make
+coffee -cj client/js/honeymap.js client/coffee/*.coffee client/coffee/feeds/hpfeeds.coffee
+
+The --join option is deprecated and will be removed in a future version.
+
+If for some reason it's necessary to share local variables between files,
+replace...
+
+    $ coffee --compile --join bundle.js -- a.coffee b.coffee c.coffee
+
+with...
+
+    $ cat a.coffee b.coffee c.coffee | coffee --compile --stdio > bundle.js
+
+cd server; go build
+go: finding github.com/fzzy/sockjs-go v0.0.0-20131128051453-1ba9e8c64209
+go: finding github.com/jt6211/sockjs-go v0.0.0-20160127145910-881f0c021b1f
+go: finding github.com/d1str0/hpfeeds v0.1.3
+go: finding golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3
+go: finding golang.org/x/sys v0.0.0-20190405154228-4b34438f7a67
+go: finding golang.org/x/crypto v0.0.0-20190404164418-38d8ce5564a5
+go: github.com/fzzy/sockjs-go@v0.0.0-20131128051453-1ba9e8c64209: git fetch -f origin refs/heads/*:refs/heads/* refs/tags/*:refs/tags/* in /home/surikoya/go/pkg/mod/cache/vcs/98a8732e28275896133f4ab234822e2b5fe02b57ed4763a12c3456b228e6ad03: exit status 128:
+	fatal: could not read Username for 'https://github.com': terminal prompts disabled
+go: error loading module requirements
+Makefile:11: recipe for target 'hpfeeds_server' failed
+make: *** [hpfeeds_server] Error 1
++ mkdir -p /var/log/mhn
++ cat
++ /opt/hpfeeds/env/bin/pip install geoip2
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting geoip2
+  Downloading geoip2-3.0.0-py2.py3-none-any.whl (23 kB)
+Collecting requests>=2.22.0
+  Downloading requests-2.26.0-py2.py3-none-any.whl (62 kB)
+     |████████████████████████████████| 62 kB 5.8 MB/s 
+Collecting urllib3>=1.25.2
+  Downloading urllib3-1.26.7-py2.py3-none-any.whl (138 kB)
+     |████████████████████████████████| 138 kB 10.7 MB/s 
+Collecting maxminddb>=1.5.2
+  Downloading maxminddb-1.5.4.tar.gz (282 kB)
+     |████████████████████████████████| 282 kB 78.0 MB/s 
+Requirement already satisfied: ipaddress; python_version == "2.7" in /opt/hpfeeds/env/lib/python2.7/site-packages (from geoip2) (1.0.23)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+     |████████████████████████████████| 149 kB 78.5 MB/s 
+Collecting chardet<5,>=3.0.2; python_version < "3"
+  Downloading chardet-4.0.0-py2.py3-none-any.whl (178 kB)
+     |████████████████████████████████| 178 kB 80.8 MB/s 
+Collecting idna<3,>=2.5; python_version < "3"
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+     |████████████████████████████████| 58 kB 60.7 MB/s 
+Building wheels for collected packages: maxminddb
+  Building wheel for maxminddb (setup.py) ... done
+  Created wheel for maxminddb: filename=maxminddb-1.5.4-py2-none-any.whl size=14878 sha256=19dfa8c91d22dc3c633bf20596158881d72e668e23c358f73bca090bb17744ea
+  Stored in directory: /tmp/pip-ephem-wheel-cache-arZz7y/wheels/a8/b5/b6/97962cef7dbae9d88e81bd2a5c2f34bc0163bd5ce391434a21
+Successfully built maxminddb
+Installing collected packages: certifi, urllib3, chardet, idna, requests, maxminddb, geoip2
+Successfully installed certifi-2021.10.8 chardet-4.0.0 geoip2-3.0.0 idna-2.10 maxminddb-1.5.4 requests-2.26.0 urllib3-1.26.7
++ cd /opt/
++ mkdir GeoLite2-City
++ wget https://github.com/pwnlandia/geolite2/raw/master/GeoLite2-City.tar.gz -O GeoLite2-City.tar.gz
+--2021-11-13 22:36:53--  https://github.com/pwnlandia/geolite2/raw/master/GeoLite2-City.tar.gz
+Resolving github.com (github.com)... 140.82.114.4
+Connecting to github.com (github.com)|140.82.114.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/pwnlandia/geolite2/master/GeoLite2-City.tar.gz [following]
+--2021-11-13 22:36:53--  https://raw.githubusercontent.com/pwnlandia/geolite2/master/GeoLite2-City.tar.gz
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 30163018 (29M) [application/octet-stream]
+Saving to: ‘GeoLite2-City.tar.gz’
+
+GeoLite2-City.tar. 100%[==============>]  28.77M   171MB/s    in 0.2s    
+
+2021-11-13 22:36:54 (171 MB/s) - ‘GeoLite2-City.tar.gz’ saved [30163018/30163018]
+
++ tar xvf GeoLite2-City.tar.gz -C GeoLite2-City --strip-components 1
+GeoLite2-City_20200114/LICENSE.txt
+GeoLite2-City_20200114/GeoLite2-City.mmdb
+GeoLite2-City_20200114/COPYRIGHT.txt
+GeoLite2-City_20200114/README.txt
++ mv GeoLite2-City/GeoLite2-City.mmdb ./
++ mkdir GeoLite2-ASN
++ wget https://github.com/pwnlandia/geolite2/raw/master/GeoLite2-ASN.tar.gz -O GeoLite2-ASN.tar.gz
+--2021-11-13 22:36:55--  https://github.com/pwnlandia/geolite2/raw/master/GeoLite2-ASN.tar.gz
+Resolving github.com (github.com)... 140.82.114.4
+Connecting to github.com (github.com)|140.82.114.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/pwnlandia/geolite2/master/GeoLite2-ASN.tar.gz [following]
+--2021-11-13 22:36:55--  https://raw.githubusercontent.com/pwnlandia/geolite2/master/GeoLite2-ASN.tar.gz
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3716428 (3.5M) [application/octet-stream]
+Saving to: ‘GeoLite2-ASN.tar.gz’
+
+GeoLite2-ASN.tar.g 100%[==============>]   3.54M  --.-KB/s    in 0.07s   
+
+2021-11-13 22:36:55 (49.2 MB/s) - ‘GeoLite2-ASN.tar.gz’ saved [3716428/3716428]
+
++ tar xvf GeoLite2-ASN.tar.gz -C GeoLite2-ASN --strip-components 1
+GeoLite2-ASN_20200114/LICENSE.txt
+GeoLite2-ASN_20200114/GeoLite2-ASN.mmdb
+GeoLite2-ASN_20200114/COPYRIGHT.txt
++ mv GeoLite2-ASN/GeoLite2-ASN.mmdb ./
+++ python -c 'import uuid;print str(uuid.uuid4()).replace("-","")'
++ SECRET=a5fdbcd905dc41c7a67ff4b4f4f9791b
++ /opt/hpfeeds/env/bin/python /opt/hpfeeds/broker/add_user.py geoloc a5fdbcd905dc41c7a67ff4b4f4f9791b geoloc.events amun.events,dionaea.connections,dionaea.capture,glastopf.events,beeswarm.hive,kippo.sessions,cowrie.sessions,conpot.events,snort.alerts,kippo.alerts,cowrie.alerts,wordpot.events,shockpot.events,p0f.events,suricata.events,elastichoney.events,drupot.events,agave.events
+/opt/hpfeeds/env/lib/python2.7/site-packages/OpenSSL/crypto.py:12: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography import x509
+inserted {'subscribe': ['amun.events', 'dionaea.connections', 'dionaea.capture', 'glastopf.events', 'beeswarm.hive', 'kippo.sessions', 'cowrie.sessions', 'conpot.events', 'snort.alerts', 'kippo.alerts', 'cowrie.alerts', 'wordpot.events', 'shockpot.events', 'p0f.events', 'suricata.events', 'elastichoney.events', 'drupot.events', 'agave.events'], 'secret': 'a5fdbcd905dc41c7a67ff4b4f4f9791b', 'identifier': 'geoloc', 'publish': ['geoloc.events']}
++ cat
++ cat
++ supervisorctl update
+geoloc: added process group
+honeymap: added process group
+++ date
++ echo '[Sat Nov 13 22:36:56 UTC 2021] ========= Installing MHN Server ========='
+[Sat Nov 13 22:36:56 UTC 2021] ========= Installing MHN Server =========
++ ./install_mhnserver.sh
++++ readlink -f ./install_mhnserver.sh
+++ dirname /opt/mhn/scripts/install_mhnserver.sh
++ SCRIPTDIR=/opt/mhn/scripts
++ MHN_HOME=/opt/mhn/scripts/..
++ '[' -f /etc/debian_version ']'
++ OS=Debian
++ INSTALLER=apt-get
++ REPOPACKAGES='git build-essential python-pip python-dev redis-server libgeoip-dev nginx libsqlite3-dev'
+++ which python
++ PYTHON=/usr/bin/python
+++ which pip
++ PIP=/usr/local/bin/pip
++ /usr/local/bin/pip install virtualenv
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Requirement already satisfied: virtualenv in /usr/local/lib/python2.7/dist-packages (20.10.0)
+Requirement already satisfied: pathlib2<3,>=2.3.3; python_version < "3.4" and sys_platform != "win32" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.3.6)
+Requirement already satisfied: filelock<4,>=3.2 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (3.2.1)
+Requirement already satisfied: importlib-metadata>=0.12; python_version < "3.8" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.1.2)
+Requirement already satisfied: importlib-resources>=1.0; python_version < "3.7" in /usr/local/lib/python2.7/dist-packages (from virtualenv) (3.3.1)
+Requirement already satisfied: backports.entry-points-selectable>=1.0.4 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (1.1.1)
+Requirement already satisfied: platformdirs<3,>=2 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (2.0.2)
+Requirement already satisfied: six<2,>=1.9.0 in /usr/lib/python2.7/dist-packages (from virtualenv) (1.11.0)
+Requirement already satisfied: distlib<1,>=0.3.1 in /usr/local/lib/python2.7/dist-packages (from virtualenv) (0.3.3)
+Requirement already satisfied: scandir; python_version < "3.5" in /usr/local/lib/python2.7/dist-packages (from pathlib2<3,>=2.3.3; python_version < "3.4" and sys_platform != "win32"->virtualenv) (1.10.0)
+Requirement already satisfied: contextlib2; python_version < "3" in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (0.6.0.post1)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (1.2.0)
+Requirement already satisfied: configparser>=3.5; python_version < "3" in /usr/local/lib/python2.7/dist-packages (from importlib-metadata>=0.12; python_version < "3.8"->virtualenv) (4.0.2)
+Requirement already satisfied: typing; python_version < "3.5" in /usr/local/lib/python2.7/dist-packages (from importlib-resources>=1.0; python_version < "3.7"->virtualenv) (3.10.0.0)
+Requirement already satisfied: singledispatch; python_version < "3.4" in /usr/local/lib/python2.7/dist-packages (from importlib-resources>=1.0; python_version < "3.7"->virtualenv) (3.7.0)
+++ which virtualenv
++ VIRTUALENV=/usr/local/bin/virtualenv
++ apt-get update
+Hit:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic InRelease
+Hit:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease        
+Reading package lists... Done                      
++ apt-get -y install git build-essential python-pip python-dev redis-server libgeoip-dev nginx libsqlite3-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+build-essential is already the newest version (12.4ubuntu1).
+libgeoip-dev is already the newest version (1.6.12-1).
+python-dev is already the newest version (2.7.15~rc1-1).
+git is already the newest version (1:2.17.1-1ubuntu0.9).
+python-pip is already the newest version (9.0.1-2.3~ubuntu1.18.04.5).
+The following additional packages will be installed:
+  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
+  libjemalloc1 libjpeg-turbo8 libjpeg8 libnginx-mod-http-geoip
+  libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter
+  libnginx-mod-mail libnginx-mod-stream libtiff5 libwebp6 libx11-6
+  libx11-data libxau6 libxcb1 libxdmcp6 libxml2 libxpm4 libxslt1.1
+  nginx-common nginx-core redis-tools
+Suggested packages:
+  libgd-tools sqlite3-doc fcgiwrap nginx-doc ssl-cert ruby-redis
+The following NEW packages will be installed:
+  fontconfig-config fonts-dejavu-core libfontconfig1 libgd3 libjbig0
+  libjemalloc1 libjpeg-turbo8 libjpeg8 libnginx-mod-http-geoip
+  libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter
+  libnginx-mod-mail libnginx-mod-stream libsqlite3-dev libtiff5 libwebp6
+  libx11-6 libx11-data libxau6 libxcb1 libxdmcp6 libxml2 libxpm4
+  libxslt1.1 nginx nginx-common nginx-core redis-server redis-tools
+0 upgraded, 29 newly installed, 0 to remove and 3 not upgraded.
+Need to get 5291 kB of archives.
+After this operation, 19.0 MB of additional disk space will be used.
+Get:1 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libjpeg-turbo8 amd64 1.5.2-0ubuntu5.18.04.4 [110 kB]
+Get:2 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxml2 amd64 2.9.4+dfsg1-6.1ubuntu1.4 [664 kB]
+Get:3 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxau6 amd64 1:1.0.8-1ubuntu1 [7556 B]
+Get:4 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libxdmcp6 amd64 1:1.1.2-3 [10.7 kB]
+Get:5 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb1 amd64 1.13-2~ubuntu18.04 [45.5 kB]
+Get:6 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libx11-data all 2:1.6.4-3ubuntu0.4 [114 kB]
+Get:7 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libx11-6 amd64 2:1.6.4-3ubuntu0.4 [572 kB]
+Get:8 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB]
+Get:9 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 fontconfig-config all 2.12.6-0ubuntu2 [55.8 kB]
+Get:10 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libfontconfig1 amd64 2.12.6-0ubuntu2 [137 kB]
+Get:11 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+Get:12 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libjbig0 amd64 2.1-3.1build1 [26.7 kB]
+Get:13 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libtiff5 amd64 4.0.9-5ubuntu0.4 [153 kB]
+Get:14 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwebp6 amd64 0.6.1-2ubuntu0.18.04.1 [186 kB]
+Get:15 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/main amd64 libxpm4 amd64 1:3.5.12-1 [34.0 kB]
+Get:16 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgd3 amd64 2.2.5-4ubuntu0.5 [119 kB]
+Get:17 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 nginx-common all 1.14.0-0ubuntu1.9 [37.2 kB]
+Get:18 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-http-geoip amd64 1.14.0-0ubuntu1.9 [11.0 kB]
+Get:19 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-http-image-filter amd64 1.14.0-0ubuntu1.9 [14.3 kB]
+Get:20 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxslt1.1 amd64 1.1.29-5ubuntu0.2 [150 kB]
+Get:21 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.14.0-0ubuntu1.9 [12.7 kB]
+Get:22 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-mail amd64 1.14.0-0ubuntu1.9 [41.6 kB]
+Get:23 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libnginx-mod-stream amd64 1.14.0-0ubuntu1.9 [63.5 kB]
+Get:24 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsqlite3-dev amd64 3.22.0-1ubuntu0.4 [633 kB]
+Get:25 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 nginx-core amd64 1.14.0-0ubuntu1.9 [413 kB]
+Get:26 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/main amd64 nginx all 1.14.0-0ubuntu1.9 [3596 B]
+Get:27 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic/universe amd64 libjemalloc1 amd64 3.6.0-11 [82.4 kB]
+Get:28 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 redis-tools amd64 5:4.0.9-1ubuntu0.2 [516 kB]
+Get:29 http://us-east1.gce.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 redis-server amd64 5:4.0.9-1ubuntu0.2 [35.4 kB]
+Fetched 5291 kB in 0s (51.3 MB/s)   
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libjpeg-turbo8:amd64.
+(Reading database ... 60072 files and directories currently installed.)
+Preparing to unpack .../00-libjpeg-turbo8_1.5.2-0ubuntu5.18.04.4_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (1.5.2-0ubuntu5.18.04.4) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../01-libxml2_2.9.4+dfsg1-6.1ubuntu1.4_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1.4) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../02-libxau6_1%3a1.0.8-1ubuntu1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.8-1ubuntu1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../03-libxdmcp6_1%3a1.1.2-3_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.2-3) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../04-libxcb1_1.13-2~ubuntu18.04_amd64.deb ...
+Unpacking libxcb1:amd64 (1.13-2~ubuntu18.04) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../05-libx11-data_2%3a1.6.4-3ubuntu0.4_all.deb ...
+Unpacking libx11-data (2:1.6.4-3ubuntu0.4) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../06-libx11-6_2%3a1.6.4-3ubuntu0.4_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.4-3ubuntu0.4) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../07-fonts-dejavu-core_2.37-1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../08-fontconfig-config_2.12.6-0ubuntu2_all.deb ...
+Unpacking fontconfig-config (2.12.6-0ubuntu2) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../09-libfontconfig1_2.12.6-0ubuntu2_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.12.6-0ubuntu2) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../10-libjpeg8_8c-2ubuntu8_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../11-libjbig0_2.1-3.1build1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1build1) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../12-libtiff5_4.0.9-5ubuntu0.4_amd64.deb ...
+Unpacking libtiff5:amd64 (4.0.9-5ubuntu0.4) ...
+Selecting previously unselected package libwebp6:amd64.
+Preparing to unpack .../13-libwebp6_0.6.1-2ubuntu0.18.04.1_amd64.deb ...
+Unpacking libwebp6:amd64 (0.6.1-2ubuntu0.18.04.1) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../14-libxpm4_1%3a3.5.12-1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../15-libgd3_2.2.5-4ubuntu0.5_amd64.deb ...
+Unpacking libgd3:amd64 (2.2.5-4ubuntu0.5) ...
+Selecting previously unselected package nginx-common.
+Preparing to unpack .../16-nginx-common_1.14.0-0ubuntu1.9_all.deb ...
+Unpacking nginx-common (1.14.0-0ubuntu1.9) ...
+Selecting previously unselected package libnginx-mod-http-geoip.
+Preparing to unpack .../17-libnginx-mod-http-geoip_1.14.0-0ubuntu1.9_amd64.deb ...
+Unpacking libnginx-mod-http-geoip (1.14.0-0ubuntu1.9) ...
+Selecting previously unselected package libnginx-mod-http-image-filter.
+Preparing to unpack .../18-libnginx-mod-http-image-filter_1.14.0-0ubuntu1.9_amd64.deb ...
+Unpacking libnginx-mod-http-image-filter (1.14.0-0ubuntu1.9) ...
+Selecting previously unselected package libxslt1.1:amd64.
+Preparing to unpack .../19-libxslt1.1_1.1.29-5ubuntu0.2_amd64.deb ...
+Unpacking libxslt1.1:amd64 (1.1.29-5ubuntu0.2) ...
+Selecting previously unselected package libnginx-mod-http-xslt-filter.
+Preparing to unpack .../20-libnginx-mod-http-xslt-filter_1.14.0-0ubuntu1.9_amd64.deb ...
+Unpacking libnginx-mod-http-xslt-filter (1.14.0-0ubuntu1.9) ...
+Selecting previously unselected package libnginx-mod-mail.
+Preparing to unpack .../21-libnginx-mod-mail_1.14.0-0ubuntu1.9_amd64.deb ...
+Unpacking libnginx-mod-mail (1.14.0-0ubuntu1.9) ...
+Selecting previously unselected package libnginx-mod-stream.
+Preparing to unpack .../22-libnginx-mod-stream_1.14.0-0ubuntu1.9_amd64.deb ...
+Unpacking libnginx-mod-stream (1.14.0-0ubuntu1.9) ...
+Selecting previously unselected package libsqlite3-dev:amd64.
+Preparing to unpack .../23-libsqlite3-dev_3.22.0-1ubuntu0.4_amd64.deb ...
+Unpacking libsqlite3-dev:amd64 (3.22.0-1ubuntu0.4) ...
+Selecting previously unselected package nginx-core.
+Preparing to unpack .../24-nginx-core_1.14.0-0ubuntu1.9_amd64.deb ...
+Unpacking nginx-core (1.14.0-0ubuntu1.9) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../25-nginx_1.14.0-0ubuntu1.9_all.deb ...
+Unpacking nginx (1.14.0-0ubuntu1.9) ...
+Selecting previously unselected package libjemalloc1.
+Preparing to unpack .../26-libjemalloc1_3.6.0-11_amd64.deb ...
+Unpacking libjemalloc1 (3.6.0-11) ...
+Selecting previously unselected package redis-tools.
+Preparing to unpack .../27-redis-tools_5%3a4.0.9-1ubuntu0.2_amd64.deb ...
+Unpacking redis-tools (5:4.0.9-1ubuntu0.2) ...
+Selecting previously unselected package redis-server.
+Preparing to unpack .../28-redis-server_5%3a4.0.9-1ubuntu0.2_amd64.deb ...
+Unpacking redis-server (5:4.0.9-1ubuntu0.2) ...
+Setting up libjemalloc1 (3.6.0-11) ...
+Setting up libsqlite3-dev:amd64 (3.22.0-1ubuntu0.4) ...
+Setting up libjbig0:amd64 (2.1-3.1build1) ...
+Setting up fonts-dejavu-core (2.37-1) ...
+Setting up nginx-common (1.14.0-0ubuntu1.9) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+Setting up libjpeg-turbo8:amd64 (1.5.2-0ubuntu5.18.04.4) ...
+Setting up libxml2:amd64 (2.9.4+dfsg1-6.1ubuntu1.4) ...
+Setting up libxslt1.1:amd64 (1.1.29-5ubuntu0.2) ...
+Setting up libnginx-mod-mail (1.14.0-0ubuntu1.9) ...
+Setting up libnginx-mod-http-xslt-filter (1.14.0-0ubuntu1.9) ...
+Setting up libxdmcp6:amd64 (1:1.1.2-3) ...
+Setting up libnginx-mod-http-geoip (1.14.0-0ubuntu1.9) ...
+Setting up libx11-data (2:1.6.4-3ubuntu0.4) ...
+Setting up libxau6:amd64 (1:1.0.8-1ubuntu1) ...
+Setting up libwebp6:amd64 (0.6.1-2ubuntu0.18.04.1) ...
+Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+Setting up fontconfig-config (2.12.6-0ubuntu2) ...
+Setting up redis-tools (5:4.0.9-1ubuntu0.2) ...
+Setting up libnginx-mod-stream (1.14.0-0ubuntu1.9) ...
+Setting up libtiff5:amd64 (4.0.9-5ubuntu0.4) ...
+Setting up redis-server (5:4.0.9-1ubuntu0.2) ...
+Created symlink /etc/systemd/system/redis.service → /lib/systemd/system/redis-server.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/redis-server.service → /lib/systemd/system/redis-server.service.
+Setting up libxcb1:amd64 (1.13-2~ubuntu18.04) ...
+Setting up libfontconfig1:amd64 (2.12.6-0ubuntu2) ...
+Setting up libx11-6:amd64 (2:1.6.4-3ubuntu0.4) ...
+Setting up libxpm4:amd64 (1:3.5.12-1) ...
+Setting up libgd3:amd64 (2.2.5-4ubuntu0.5) ...
+Setting up libnginx-mod-http-image-filter (1.14.0-0ubuntu1.9) ...
+Setting up nginx-core (1.14.0-0ubuntu1.9) ...
+Setting up nginx (1.14.0-0ubuntu1.9) ...
+Processing triggers for systemd (237-3ubuntu10.52) ...
+Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
++ cd /opt/mhn/scripts/..
+++ pwd
++ MHN_HOME=/opt/mhn
++ /usr/local/bin/virtualenv -p /usr/bin/python env
+created virtual environment CPython2.7.17.final.0-64 in 148ms
+  creator CPython2Posix(dest=/opt/mhn/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, wheel=bundle, setuptools=bundle, via=copy, app_data_dir=/home/surikoya/.local/share/virtualenv)
+    added seed packages: pip==20.3.4, setuptools==44.1.1, wheel==0.37.0
+  activators NushellActivator,PythonActivator,FishActivator,CShellActivator,PowerShellActivator,BashActivator
++ . env/bin/activate
+++ '[' env/bin/activate = ./install_mhnserver.sh ']'
+++ deactivate nondestructive
+++ unset -f pydoc
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ hash -r
+++ '[' -z '' ']'
+++ unset VIRTUAL_ENV
+++ '[' '!' nondestructive = nondestructive ']'
+++ VIRTUAL_ENV=/opt/mhn/env
+++ '[' linux-gnu = cygwin ']'
+++ '[' linux-gnu = msys ']'
+++ export VIRTUAL_ENV
+++ _OLD_VIRTUAL_PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+++ PATH=/opt/mhn/env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+++ export PATH
+++ '[' -z '' ']'
+++ '[' -z '' ']'
+++ _OLD_VIRTUAL_PS1=
+++ '[' x '!=' x ']'
++++ basename /opt/mhn/env
+++ PS1='(env) '
+++ export PS1
+++ alias pydoc
+++ true
+++ hash -r
++ pip install -r server/requirements.txt
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
+WARNING: The directory '/home/surikoya/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting Werkzeug==0.16.1
+  Downloading Werkzeug-0.16.1-py2.py3-none-any.whl (327 kB)
+     |████████████████████████████████| 327 kB 5.0 MB/s 
+Requirement already satisfied: argparse==1.2.1 in /usr/lib/python2.7 (from -r server/requirements.txt (line 2)) (1.2.1)
+Collecting Flask==0.12.4
+  Downloading Flask-0.12.4-py2.py3-none-any.whl (81 kB)
+     |████████████████████████████████| 81 kB 71.5 MB/s 
+Collecting Flask-Login==0.3.2
+  Downloading Flask-Login-0.3.2.tar.gz (11 kB)
+Collecting Flask-Mail==0.9.1
+  Downloading Flask-Mail-0.9.1.tar.gz (45 kB)
+     |████████████████████████████████| 45 kB 51.9 MB/s 
+Collecting Flask-Migrate==1.8.1
+  Downloading Flask-Migrate-1.8.1.tar.gz (9.5 kB)
+Collecting Flask-SQLAlchemy==2.5.1
+  Downloading Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl (17 kB)
+Collecting Flask-Security==1.7.5
+  Downloading Flask-Security-1.7.5.tar.gz (42 kB)
+     |████████████████████████████████| 42 kB 29.4 MB/s 
+Collecting Flask-Testing==0.7.1
+  Downloading Flask-Testing-0.7.1.tar.gz (43 kB)
+     |████████████████████████████████| 43 kB 41.2 MB/s 
+Collecting Flask-WTF==0.14.2
+  Downloading Flask_WTF-0.14.2-py2.py3-none-any.whl (14 kB)
+Collecting bcrypt==3.1.4
+  Downloading bcrypt-3.1.4-cp27-cp27mu-manylinux1_x86_64.whl (57 kB)
+     |████████████████████████████████| 57 kB 58.7 MB/s 
+Collecting python-dateutil==2.2
+  Downloading python-dateutil-2.2.tar.gz (259 kB)
+     |████████████████████████████████| 259 kB 60.3 MB/s 
+Collecting celery==4.3.0
+  Downloading celery-4.3.0-py2.py3-none-any.whl (413 kB)
+     |████████████████████████████████| 413 kB 72.2 MB/s 
+Collecting redis==3.2.1
+  Downloading redis-3.2.1-py2.py3-none-any.whl (65 kB)
+     |████████████████████████████████| 65 kB 56.0 MB/s 
+Collecting requests==2.21.0
+  Downloading requests-2.21.0-py2.py3-none-any.whl (57 kB)
+     |████████████████████████████████| 57 kB 60.1 MB/s 
+Collecting xmltodict==0.12.0
+  Downloading xmltodict-0.12.0-py2.py3-none-any.whl (9.2 kB)
+Collecting uWSGI==2.0.18
+  Downloading uwsgi-2.0.18.tar.gz (801 kB)
+     |████████████████████████████████| 801 kB 70.1 MB/s 
+Collecting pymongo==3.7.2
+  Downloading pymongo-3.7.2-cp27-cp27mu-manylinux1_x86_64.whl (411 kB)
+     |████████████████████████████████| 411 kB 72.7 MB/s 
+Collecting hpfeeds-threatstream==1.1
+  Downloading hpfeeds-threatstream-1.1.tar.gz (4.0 kB)
+Collecting pygal==2.4.0
+  Downloading pygal-2.4.0-py2.py3-none-any.whl (127 kB)
+     |████████████████████████████████| 127 kB 75.9 MB/s 
+Collecting hpfeeds-logger==0.0.7.7
+  Downloading hpfeeds_logger-0.0.7.7-py2-none-any.whl (13 kB)
+Collecting geoip2==2.9.0
+  Downloading geoip2-2.9.0-py2.py3-none-any.whl (18 kB)
+Collecting pysqlite>=2.8.0
+  Downloading pysqlite-2.8.3.tar.gz (80 kB)
+     |████████████████████████████████| 80 kB 69.3 MB/s 
+Collecting email_validator==1.0.5
+  Downloading email_validator-1.0.5-py2.py3-none-any.whl (14 kB)
+Collecting click>=2.0
+  Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+     |████████████████████████████████| 82 kB 31.4 MB/s 
+Collecting itsdangerous>=0.21
+  Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+Collecting Jinja2>=2.4
+  Downloading Jinja2-2.11.3-py2.py3-none-any.whl (125 kB)
+     |████████████████████████████████| 125 kB 77.6 MB/s 
+Collecting blinker
+  Downloading blinker-1.4.tar.gz (111 kB)
+     |████████████████████████████████| 111 kB 75.3 MB/s 
+Collecting alembic>=0.6
+  Downloading alembic-1.6.5-py2.py3-none-any.whl (164 kB)
+     |████████████████████████████████| 164 kB 76.6 MB/s 
+Collecting Flask-Script>=0.6
+  Downloading Flask-Script-2.0.6.tar.gz (43 kB)
+     |████████████████████████████████| 43 kB 42.2 MB/s 
+Collecting SQLAlchemy>=0.8.0
+  Downloading SQLAlchemy-1.4.27-cp27-cp27mu-manylinux_2_5_x86_64.manylinux1_x86_64.whl (1.6 MB)
+     |████████████████████████████████| 1.6 MB 69.8 MB/s 
+Collecting Flask-Principal>=0.3.3
+  Downloading Flask-Principal-0.4.0.tar.gz (5.5 kB)
+Collecting passlib>=1.6.1
+  Downloading passlib-1.7.4-py2.py3-none-any.whl (525 kB)
+     |████████████████████████████████| 525 kB 75.4 MB/s 
+Collecting WTForms
+  Downloading WTForms-2.3.3-py2.py3-none-any.whl (169 kB)
+     |████████████████████████████████| 169 kB 77.5 MB/s 
+Collecting cffi>=1.1
+  Downloading cffi-1.15.0-cp27-cp27mu-manylinux1_x86_64.whl (393 kB)
+     |████████████████████████████████| 393 kB 74.6 MB/s 
+Collecting six>=1.4.1
+  Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting kombu<5.0,>=4.4.0
+  Downloading kombu-4.6.11-py2.py3-none-any.whl (184 kB)
+     |████████████████████████████████| 184 kB 78.0 MB/s 
+Collecting pytz>dev
+  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
+     |████████████████████████████████| 503 kB 78.1 MB/s 
+Collecting billiard<4.0,>=3.6.0
+  Downloading billiard-3.6.4.0.tar.gz (155 kB)
+     |████████████████████████████████| 155 kB 76.0 MB/s 
+Collecting vine>=1.3.0
+  Downloading vine-1.3.0-py2.py3-none-any.whl (14 kB)
+Collecting chardet<3.1.0,>=3.0.2
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+     |████████████████████████████████| 133 kB 77.0 MB/s 
+Collecting certifi>=2017.4.17
+  Downloading certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+     |████████████████████████████████| 149 kB 76.4 MB/s 
+Collecting urllib3<1.25,>=1.21.1
+  Downloading urllib3-1.24.3-py2.py3-none-any.whl (118 kB)
+     |████████████████████████████████| 118 kB 73.7 MB/s 
+Collecting idna<2.9,>=2.5
+  Downloading idna-2.8-py2.py3-none-any.whl (58 kB)
+     |████████████████████████████████| 58 kB 59.4 MB/s 
+Collecting maxminddb>=1.4.0
+  Downloading maxminddb-1.5.4.tar.gz (282 kB)
+     |████████████████████████████████| 282 kB 78.3 MB/s 
+Collecting ipaddress; python_version == "2.7"
+  Downloading ipaddress-1.0.23-py2.py3-none-any.whl (18 kB)
+Collecting dnspython>=1.15.0
+  Downloading dnspython-1.16.0-py2.py3-none-any.whl (188 kB)
+     |████████████████████████████████| 188 kB 79.4 MB/s 
+Collecting MarkupSafe>=0.23
+  Downloading MarkupSafe-1.1.1-cp27-cp27mu-manylinux1_x86_64.whl (24 kB)
+Collecting python-editor>=0.3
+  Downloading python_editor-1.0.4-py2-none-any.whl (4.9 kB)
+Collecting Mako
+  Downloading Mako-1.1.5-py2.py3-none-any.whl (75 kB)
+     |████████████████████████████████| 75 kB 64.8 MB/s 
+Collecting importlib-metadata; python_version < "3.8"
+  Downloading importlib_metadata-2.1.2-py2.py3-none-any.whl (10 kB)
+Collecting pycparser
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+     |████████████████████████████████| 118 kB 79.8 MB/s 
+Collecting amqp<2.7,>=2.6.0
+  Downloading amqp-2.6.1-py2.py3-none-any.whl (48 kB)
+     |████████████████████████████████| 48 kB 60.4 MB/s 
+Collecting contextlib2; python_version < "3"
+  Downloading contextlib2-0.6.0.post1-py2.py3-none-any.whl (9.8 kB)
+Collecting zipp>=0.5
+  Downloading zipp-1.2.0-py2.py3-none-any.whl (4.8 kB)
+Collecting configparser>=3.5; python_version < "3"
+  Downloading configparser-4.0.2-py2.py3-none-any.whl (22 kB)
+Collecting pathlib2; python_version < "3"
+  Downloading pathlib2-2.3.6-py2.py3-none-any.whl (17 kB)
+Collecting scandir; python_version < "3.5"
+  Downloading scandir-1.10.0.tar.gz (33 kB)
+Building wheels for collected packages: Flask-Login, Flask-Mail, Flask-Migrate, Flask-Security, Flask-Testing, python-dateutil, uWSGI, hpfeeds-threatstream, pysqlite, blinker, Flask-Script, Flask-Principal, billiard, maxminddb, scandir
+  Building wheel for Flask-Login (setup.py) ... done
+  Created wheel for Flask-Login: filename=Flask_Login-0.3.2-py2-none-any.whl size=11192 sha256=a659a540ed4308a8b4fa8d202a0f84ff9fbe71812999ab2c3235610550f5b888
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/aa/46/a9/58552144e9333802d0fb7d42a53abdc2cf9e1cced7806a50ef
+  Building wheel for Flask-Mail (setup.py) ... done
+  Created wheel for Flask-Mail: filename=Flask_Mail-0.9.1-py2-none-any.whl size=7567 sha256=7a9e9ea4c75faa0a1d12cc10fd77a8873def56a2bec214d36cfa2fc7076d3e0c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/16/13/9b/5a18f472891df0d251ae0842b2839f5a2690b03e72d3c72aae
+  Building wheel for Flask-Migrate (setup.py) ... done
+  Created wheel for Flask-Migrate: filename=Flask_Migrate-1.8.1-py2-none-any.whl size=11164 sha256=fd0f3722edf28beb2b26d0dec4bb832b6b4fd9bab9b6d728e1e95185fb04d3d1
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/82/d7/94/56bdee4df42788cfefe88a0230515317ad4529aa4bfbad583d
+  Building wheel for Flask-Security (setup.py) ... done
+  Created wheel for Flask-Security: filename=Flask_Security-1.7.5-py2-none-any.whl size=36427 sha256=f4d69f37c3ed945c5ccf2dbb68aad6fc1088564872ca6c950c867cfd60f02e18
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/24/fb/90/9eb46ac289f1c25ccb42cee76cb3c45f3f44e38da7e5aa5543
+  Building wheel for Flask-Testing (setup.py) ... done
+  Created wheel for Flask-Testing: filename=Flask_Testing-0.7.1-py2-none-any.whl size=8167 sha256=494832819b6e8c46f9a10878445385f2e3b9970f350743838d7fdb1f9c95dce8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/b8/df/c7/b87f361f31c076814b2759bdfc8d0f24e977b72ebdc05ff2c9
+  Building wheel for python-dateutil (setup.py) ... done
+  Created wheel for python-dateutil: filename=python_dateutil-2.2-py2-none-any.whl size=226719 sha256=94147e1bf577ffa8523d9d513e24d02c2d76754a5b105e5358f79ecd45b5a5b4
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/37/b3/fb/975fea96327b4fc1110effeba16b5377816217170576398dea
+  Building wheel for uWSGI (setup.py) ... done
+  Created wheel for uWSGI: filename=uWSGI-2.0.18-cp27-cp27mu-linux_x86_64.whl size=548418 sha256=9c46b1d55049372a9af00d75c879a998910c40747e7e56f32eac665688d87b11
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/80/a8/2f/929600fafe740d1dbc7e56b518ac83307bd94afe414cc78177
+  Building wheel for hpfeeds-threatstream (setup.py) ... done
+  Created wheel for hpfeeds-threatstream: filename=hpfeeds_threatstream-1.1-py2-none-any.whl size=5078 sha256=e0bc582e34910fce9042a45dc4a2a433bf65aad295e444c8547bd892f1305b2c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/e7/7f/37/dcb93f04c4952dba0a6e1be257bddfa7e66166c2b45793a2ce
+  Building wheel for pysqlite (setup.py) ... done
+  Created wheel for pysqlite: filename=pysqlite-2.8.3-cp27-cp27mu-linux_x86_64.whl size=101532 sha256=0e974c05c573a670adb0efbc8245166cea7ed5cfcce478d9bb220385d5890008
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/25/ef/46/37c7c667b4cb6a2bc3c65f76bdc22598996711b3322b123435
+  Building wheel for blinker (setup.py) ... done
+  Created wheel for blinker: filename=blinker-1.4-py2-none-any.whl size=13452 sha256=c22924860f60457e97be4a8d880c08bcd4628bc39346ec7fba835bf653f4a026
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/7b/1f/a0/7ce496c69b9be7cef75645749e256d5ef2dc9d08336f92248b
+  Building wheel for Flask-Script (setup.py) ... done
+  Created wheel for Flask-Script: filename=Flask_Script-2.0.6-py2-none-any.whl size=14013 sha256=f606bb1048cea2701ac6d4a467a90b4555b092c10550442d696d09ccde131062
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/7b/4c/39/51ff98bbd0b630dbe6beef8b01aa06ae4e3d32cc2be56f8ae2
+  Building wheel for Flask-Principal (setup.py) ... done
+  Created wheel for Flask-Principal: filename=Flask_Principal-0.4.0-py2-none-any.whl size=5575 sha256=cd589b6c271ebe2979e2bc5b8feb76503ae59e7c4ddc76e4167ac1970d882746
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/6c/bc/a1/daad0ee69c92c04cff05535bd6acf80fb1b543abd279e5daea
+  Building wheel for billiard (setup.py) ... done
+  Created wheel for billiard: filename=billiard-3.6.4.0-cp27-cp27mu-linux_x86_64.whl size=114251 sha256=f9850e25f6a25897fdf0ffc495b1ac0879537f86d7c6d365a8167efb6afa0248
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/58/35/20/ed07f1e078181612d12b719883a2db0f91d05e320ed39adc37
+  Building wheel for maxminddb (setup.py) ... done
+  Created wheel for maxminddb: filename=maxminddb-1.5.4-py2-none-any.whl size=14878 sha256=c890a0b55d7f12adce4e0fa99d608ba32b77061290d50151e68b0a08cd713d2a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/a8/b5/b6/97962cef7dbae9d88e81bd2a5c2f34bc0163bd5ce391434a21
+  Building wheel for scandir (setup.py) ... done
+  Created wheel for scandir: filename=scandir-1.10.0-cp27-cp27mu-linux_x86_64.whl size=33241 sha256=b6ab6b22b007eb0f9b359c1ff776e67a7cd66cc5e46f4872f76b2ec130119308
+  Stored in directory: /tmp/pip-ephem-wheel-cache-70VyYG/wheels/58/2c/26/52406f7d1f19bcc47a6fbd1037a5f293492f5cf1d58c539edb
+Successfully built Flask-Login Flask-Mail Flask-Migrate Flask-Security Flask-Testing python-dateutil uWSGI hpfeeds-threatstream pysqlite blinker Flask-Script Flask-Principal billiard maxminddb scandir
+Installing collected packages: Werkzeug, click, itsdangerous, MarkupSafe, Jinja2, Flask, Flask-Login, blinker, Flask-Mail, contextlib2, zipp, configparser, scandir, six, pathlib2, importlib-metadata, SQLAlchemy, Flask-SQLAlchemy, python-dateutil, python-editor, Mako, alembic, Flask-Script, Flask-Migrate, Flask-Principal, WTForms, Flask-WTF, passlib, Flask-Security, Flask-Testing, pycparser, cffi, bcrypt, vine, amqp, kombu, pytz, billiard, celery, redis, chardet, certifi, urllib3, idna, requests, xmltodict, uWSGI, pymongo, hpfeeds-threatstream, pygal, ipaddress, maxminddb, geoip2, hpfeeds-logger, pysqlite, dnspython, email-validator
+Successfully installed Flask-0.12.4 Flask-Login-0.3.2 Flask-Mail-0.9.1 Flask-Migrate-1.8.1 Flask-Principal-0.4.0 Flask-SQLAlchemy-2.5.1 Flask-Script-2.0.6 Flask-Security-1.7.5 Flask-Testing-0.7.1 Flask-WTF-0.14.2 Jinja2-2.11.3 Mako-1.1.5 MarkupSafe-1.1.1 SQLAlchemy-1.4.27 WTForms-2.3.3 Werkzeug-0.16.1 alembic-1.6.5 amqp-2.6.1 bcrypt-3.1.4 billiard-3.6.4.0 blinker-1.4 celery-4.3.0 certifi-2021.10.8 cffi-1.15.0 chardet-3.0.4 click-7.1.2 configparser-4.0.2 contextlib2-0.6.0.post1 dnspython-1.16.0 email-validator-1.0.5 geoip2-2.9.0 hpfeeds-logger-0.0.7.7 hpfeeds-threatstream-1.1 idna-2.8 importlib-metadata-2.1.2 ipaddress-1.0.23 itsdangerous-1.1.0 kombu-4.6.11 maxminddb-1.5.4 passlib-1.7.4 pathlib2-2.3.6 pycparser-2.21 pygal-2.4.0 pymongo-3.7.2 pysqlite-2.8.3 python-dateutil-2.2 python-editor-1.0.4 pytz-2021.3 redis-3.2.1 requests-2.21.0 scandir-1.10.0 six-1.16.0 uWSGI-2.0.18 urllib3-1.24.3 vine-1.3.0 xmltodict-0.12.0 zipp-1.2.0
++ '[' -f /etc/redhat-release ']'
++ echo 'DONE installing python virtualenv'
+DONE installing python virtualenv
++ mkdir -p /var/log/mhn
++ cd /opt/mhn/server/
++ echo ===========================================================
+===========================================================
++ echo '  MHN Configuration'
+  MHN Configuration
++ echo ===========================================================
+===========================================================
++ python generateconfig.py
+Do you wish to run in Debug mode?: y/n n
+Superuser email: gcloudwesttest@gmail.com
+Superuser password: 
+Superuser password: (again): 
+Server base url ["http://34.138.77.219"]: 
+Honeymap url ["http://34.138.77.219:3000"]: 
+Mail server address ["localhost"]: 
+Mail server port [25]: 
+Use TLS for email?: y/n n
+Use SSL for email?: y/n n
+Mail server username [""]: 
+Mail server password [""]: 
+Mail default sender [""]: 
+Path for log file ["/var/log/mhn/mhn.log"]: 
++ echo -e '\nInitializing database, please be patient. This can take several minutes'
+
+Initializing database, please be patient. This can take several minutes
++ python initdatabase.py
+Imported 500 rules so far...
+Imported 1000 rules so far...
+Imported 1500 rules so far...
+Imported 2000 rules so far...
+Imported 2500 rules so far...
+Imported 3000 rules so far...
+Imported 3500 rules so far...
+Imported 4000 rules so far...
+Imported 4500 rules so far...
+Imported 5000 rules so far...
+Imported 5500 rules so far...
+Imported 6000 rules so far...
+Imported 6500 rules so far...
+Imported 7000 rules so far...
+Imported 7500 rules so far...
+Imported 8000 rules so far...
+Imported 8500 rules so far...
+Imported 9000 rules so far...
+Imported 9500 rules so far...
+^[[1;2BImported 10000 rules so far...
+Imported 10500 rules so far...
+Imported 11000 rules so far...
+Imported 11500 rules so far...
+Imported 12000 rules so far...
+Imported 12500 rules so far...
+Imported 13000 rules so far...
+Imported 13500 rules so far...
+Imported 14000 rules so far...
+Imported 14500 rules so far...
+Imported 15000 rules so far...
+Imported 15500 rules so far...
+Imported 16000 rules so far...
+Imported 16500 rules so far...
+Imported 17000 rules so far...
+Imported 17500 rules so far...
+Imported 18000 rules so far...
+Imported 18500 rules so far...
+Imported 19000 rules so far...
+Imported 19500 rules so far...
+Imported 20000 rules so far...
+Imported 20500 rules so far...
+Imported 21000 rules so far...
+Imported 21500 rules so far...
+Imported 22000 rules so far...
+Imported 22500 rules so far...
+Imported 23000 rules so far...
+Finished Importing 23255 rules.  Committing data
++ cd /opt/mhn
++ mkdir -p /opt/www
++ mkdir -p /etc/nginx
++ '[' Debian == Debian ']'
++ mkdir -p /etc/nginx/sites-available
++ mkdir -p /etc/nginx/sites-enabled
++ NGINXCONFIG=/etc/nginx/sites-available/default
++ touch /etc/nginx/sites-available/default
++ ln -fs /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
++ NGINXUG=www-data:www-data
++ NGINXUSER=www-data
++ cat
++ cat
++ cat
++ touch /var/log/mhn/mhn-celery-worker.log /var/log/mhn/mhn-celery-worker.err
++ chown www-data:www-data /var/log/mhn/mhn-celery-worker.err /var/log/mhn/mhn-celery-worker.log
++ cat
+++ python -c 'import uuid;print str(uuid.uuid4())'
++ MHN_UUID=62ecffc9-92b1-45c8-ae72-a5e86bd79405
+++ python -c 'import uuid;print str(uuid.uuid4()).replace("-","")'
++ SECRET=b64c527bc4584ab88c0c5a5cfd698b0d
++ /opt/hpfeeds/env/bin/python /opt/hpfeeds/broker/add_user.py collector b64c527bc4584ab88c0c5a5cfd698b0d '' geoloc.events
+/opt/hpfeeds/env/lib/python2.7/site-packages/OpenSSL/crypto.py:12: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography import x509
+inserted {'subscribe': ['geoloc.events'], 'secret': 'b64c527bc4584ab88c0c5a5cfd698b0d', 'identifier': 'collector', 'publish': []}
++ cat
++ cat
++ touch /opt/mhn/server/mhn.log
++ chown www-data:www-data -R /opt/mhn/server/apikeys_migration.sh /opt/mhn/server/collector.json /opt/mhn/server/collector.json.example /opt/mhn/server/collector.py /opt/mhn/server/collector_v2.py /opt/mhn/server/config.py /opt/mhn/server/config.py.template /opt/mhn/server/config.pyc /opt/mhn/server/generateconfig.py /opt/mhn/server/initdatabase.py /opt/mhn/server/manage.py /opt/mhn/server/manual_password_reset.py /opt/mhn/server/mhn /opt/mhn/server/mhn.db /opt/mhn/server/mhn.log /opt/mhn/server/mhn.py /opt/mhn/server/migration_remove-hostname-and-name-uniq-constraints.sql /opt/mhn/server/requirements.txt
++ supervisorctl update
+mhn-celery-beat: added process group
+mhn-celery-worker: added process group
+mhn-collector: added process group
+mhn-uwsgi: added process group
++ /etc/init.d/nginx restart
+[ ok ] Restarting nginx (via systemctl): nginx.service.
+++ date
++ echo '[Sat Nov 13 22:45:30 UTC 2021] ========= MHN Server Install Finished ========='
+[Sat Nov 13 22:45:30 UTC 2021] ========= MHN Server Install Finished =========
++ echo ''
+
++ '[' false = false ']'
++ true
++ echo -n 'Would you like to integrate with Splunk? (y/n) '
+Would you like to integrate with Splunk? (y/n) + read SPLUNK
+n 
++ '[' 'n' == y -o 'n' == Y ']'
++ '[' 'n' == n -o 'n' == N ']'
++ true
++ echo -n 'Would you like to integrate with Splunk? (y/n) '
+Would you like to integrate with Splunk? (y/n) + read SPLUNK
+n
++ '[' n == y -o n == Y ']'
++ '[' n == n -o n == N ']'
++ echo 'Skipping Splunk integration'
+Skipping Splunk integration
++ echo 'The splunk integration can be completed at a later time by running this:'
+The splunk integration can be completed at a later time by running this:
++ echo '    cd /opt/mhn/scripts/'
+    cd /opt/mhn/scripts/
++ echo '    sudo ./install_splunk_universalforwarder.sh <SPLUNK_HOST> <SPLUNK_PORT>'
+    sudo ./install_splunk_universalforwarder.sh <SPLUNK_HOST> <SPLUNK_PORT>
++ echo '    sudo ./install_hpfeeds-logger-splunk.sh'
+    sudo ./install_hpfeeds-logger-splunk.sh
++ break
++ true
++ echo -n 'ELK Script will only work on Debian Based systems like Ubuntu'
+ELK Script will only work on Debian Based systems like Ubuntu+ echo -n 'Would you like to install ELK? (y/n) '
+Would you like to install ELK? (y/n) + read ELK
+n
++ '[' n == y -o n == Y ']'
++ '[' n == n -o n == N ']'
++ echo 'Skipping ELK installation'
+Skipping ELK installation
++ echo 'The ELK installation can be completed at a later time by running this:'
+The ELK installation can be completed at a later time by running this:
++ echo '    cd /opt/mhn/scripts/'
+    cd /opt/mhn/scripts/
++ echo '    sudo ./install_elk.sh'
+    sudo ./install_elk.sh
++ break
++ true
++ echo -n 'A properly configured firewall is highly encouraged while running MHN.'
+A properly configured firewall is highly encouraged while running MHN.+ echo -n 'This script can enable and configure UFW for use with MHN.'
+This script can enable and configure UFW for use with MHN.+ echo -n 'Would you like to add MHN rules to UFW? (y/n) '
+Would you like to add MHN rules to UFW? (y/n) + read UFW
+n
++ '[' n == y -o n == Y ']'
++ '[' n == n -o n == N ']'
++ echo 'Skipping UFW configuration'
+Skipping UFW configuration
++ echo 'The UFW configuration can be completed at a later time by running this:'
+The UFW configuration can be completed at a later time by running this:
++ echo '    cd /opt/mhn/scripts/'
+    cd /opt/mhn/scripts/
++ echo '    sudo ./enable_ufw.sh'
+    sudo ./enable_ufw.sh
++ break
++ chown www-data /var/log/mhn/mhn.log
++ chown www-data /var/log/mhn/mhn.log
++ supervisorctl restart mhn-celery-worker
+mhn-celery-worker: ERROR (not running)
+mhn-celery-worker: started
+++ date
++ echo '[Sat Nov 13 22:46:46 UTC 2021] Completed Installation of all MHN packages'
+[Sat Nov 13 22:46:46 UTC 2021] Completed Installation of all MHN packages
