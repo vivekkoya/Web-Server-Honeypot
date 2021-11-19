@@ -16,11 +16,12 @@ The Honeypot was deployed by using GCP through the Web and CLI
 
 **Summary:** Briefly in your own words, what does dionaea do?
 
-<img src="dionaea-honeypot.gif">
+![image](https://user-images.githubusercontent.com/67130044/142578118-2d476273-d0f3-436b-97da-eb0bcadddbdc.png)
 
 ### Database Backup (Required) 
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
+
 
 *Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 
