@@ -31,7 +31,7 @@ with the following command:
 ```bash
 mongoexport --db mnemosyne --collection session > session.json
 ```
-
+[a relative link](session.json)
 
 **Summary:** What does this honeypot simulate and do for a security researcher?
 This honeypot simulates a vulnerable target open in the wild with all types of connections and protocols open. This would help test if there were any vulnerabilities beyond the firewall defense mechanisms.
