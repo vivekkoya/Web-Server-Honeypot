@@ -24,7 +24,11 @@ The Honeypot was deployed by using GCP through the Web and CLI
 ### Database Backup (Required) 
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
-The relation database management system that MHN-Admin uses is 
+The relation database management system that MHN-Admin uses is mongodb
+with the following command
+```console
+mongoexport --db mnemosyne --collection session > session.json
+```
 
 
 
@@ -48,6 +52,7 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 
 <img src="x-malware.gif">
 ##Commands
+``` console
 gcloud config list
 
 gcloud compute regions list
@@ -187,7 +192,7 @@ honeypot-1  us-east1-b  n1-standard-1               10.142.0.4   34.73.181.208  
 wget "http://34.138.77.219/api/script/?text=true&script_id=2" -O deploy.sh && sudo bash deploy.sh http://34.138.77.219 FkO6KMHd
 
 2nd time IP when instance is started is: wget "http://34.138.244.92 /api/script/?text=true&script_id=2" -O deploy.sh && sudo bash deploy.sh http://34.138.244.92  FkO6KMHd
-
+```
 ## Notes
 
 Describe any challenges encountered while doing the assignment.
