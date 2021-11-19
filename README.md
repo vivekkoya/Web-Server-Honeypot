@@ -5,6 +5,8 @@
 **Objective:** Create a honeynet using MHN-Admin. Present your findings as if you were requested to give a brief report of the current state of Internet security. Assume that your audience is a current employer who is questioning why the company should allocate anymore resources to the IT security team.
 
 ### MHN-Admin Deployment (Required)
+GIF Walkthrough:
+![ezgif-6-44bbd5aa7127](https://user-images.githubusercontent.com/67130044/142585612-ee99036d-bfa9-4995-a0c2-188589b6f166.gif)
 
 **Summary:** 
 The Honeypot was deployed by using GCP through the Web and CLI 
