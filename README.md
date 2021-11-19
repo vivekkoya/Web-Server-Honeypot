@@ -17,6 +17,7 @@ The Honeypot was deployed by using GCP through the Web and CLI
 ### Dionaea Honeypot Deployment (Required)
 
 **Summary:** Briefly in your own words, what does dionaea do?
+![Screenshot from 2021-11-18 23-23-47](https://user-images.githubusercontent.com/67130044/142583161-6f2fde24-ba95-40bd-ba9e-50decd746e7d.png)
 
 ![image](https://user-images.githubusercontent.com/67130044/142578118-2d476273-d0f3-436b-97da-eb0bcadddbdc.png)
 
