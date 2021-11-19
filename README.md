@@ -52,7 +52,8 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 
 <img src="x-malware.gif">
 ##Commands
-``` bash
+
+```bash
 gcloud config list
 
 gcloud compute regions list
