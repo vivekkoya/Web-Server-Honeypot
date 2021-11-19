@@ -33,16 +33,11 @@ mongoexport --db mnemosyne --collection session > session.json
 ```
 
 
-
-### Deploying Additional Honeypot(s) (Optional)
-
-#### X Honeypot
-
 **Summary:** What does this honeypot simulate and do for a security researcher?
-The honeypot simulates a vulnerable target open in the wild with all types of connections and protocols open. This would help test if there were any vulnerabilities beyond the firewall defense mechanisms.
+This honeypot simulates a vulnerable target open in the wild with all types of connections and protocols open. This would help test if there were any vulnerabilities beyond the firewall defense mechanisms.
 
 
-##Commands
+### Commands
 
 ```bash
 gcloud config list
@@ -84,10 +79,7 @@ gcloud compute instances create "mhn-admin" \
     --boot-disk-type "pd-standard" \
     --boot-disk-device-name "mhn-admin"
 
-
-
 Output:
-
 
 WARNING: You have selected a disk size of under [200GB]. This may result in poor I/O performance. For more information, see: https://developers.google.com/compute/docs/disks#performance.
 Created [https://www.googleapis.com/compute/v1/projects/blissful-canyon-332005/zones/us-east1-b/instances/mhn-admin].
@@ -105,14 +97,6 @@ cd mhn/
 sudo sed -i 's/Flask-SQLAlchemy==2.3.2/Flask-SQLAlchemy==2.5.1/g' server/requirements.txt
 
 sudo ./install.sh
-
-
-
-
-
-
-
-
 
 ****Welcome*****
 Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.11.0-1021-gcp x86_64)
@@ -132,8 +116,6 @@ To restore this content, you can run the 'unminimize' command.
 
 The list of available updates is more than a week old.
 To check for new updates run: sudo apt update
-
-
 
 ***update repos***
 sudo apt update
@@ -187,4 +169,4 @@ wget "http://34.138.77.219/api/script/?text=true&script_id=2" -O deploy.sh && su
 ```
 ## Notes
 
-Describe any challenges encountered while doing the assignment.
+Working with the configuration after stopping a VM instance was a trouble since the VM would take on new external IP addresses each time the instance was stopped and started. This required changing the commands manually to accomadate the change in IP addresses. 
