@@ -26,7 +26,7 @@ The Honeypot was deployed by using GCP through the Web and CLI
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
 The relation database management system that MHN-Admin uses is mongodb
 with the following command
-```shell
+```bash
 mongoexport --db mnemosyne --collection session > session.json
 ```
 
@@ -52,7 +52,7 @@ SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
 
 <img src="x-malware.gif">
 ##Commands
-``` shell
+``` bash
 gcloud config list
 
 gcloud compute regions list
