@@ -23,9 +23,9 @@ The Honeypot was deployed by using GCP through the Web and CLI
 
 ### Database Backup (Required) 
 
-**Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
-The relation database management system that MHN-Admin uses is mongodb
-with the following command
+**Summary:** 
+The relation database management system that MHN-Admin uses is mongodb. The exported JSON file contains information of the probe or source ip addresses, their ports, the protocol of the connection, and the name of the honeypot. 
+with the following command:
 ```bash
 mongoexport --db mnemosyne --collection session > session.json
 ```
@@ -37,20 +37,9 @@ mongoexport --db mnemosyne --collection session > session.json
 #### X Honeypot
 
 **Summary:** What does this honeypot simulate and do for a security researcher?
+The honeypot simulates a vulnerable target open in the wild with all types of connections and protocols open. This would help test if there were any vulnerabilities beyond the firewall defense mechanisms.
 
-<img src="x-honeypot.gif">
 
-### Malware Capture and Identification (Optional)
-
-#### X Malware
-
-**Summary:** How did you find it? Which honeypot captured it? What does each malware do?
-
-MD5 Hash: *Run `md5sum` on the file and record the hash here.*
-
-SHA1 Hash: *Run `sha1sum` on the file and record the hash here.*
-
-<img src="x-malware.gif">
 ##Commands
 
 ```bash
