@@ -11,6 +11,8 @@ The Honeypot was deployed by using GCP through the Web and CLI
 
 ![Screenshot from 2021-11-18 22-34-13](https://user-images.githubusercontent.com/67130044/142576614-081f56ee-29fe-469a-972c-4c02f967dd31.png)
 ![image](https://user-images.githubusercontent.com/67130044/142576669-ee716992-8208-4b63-af2c-7cbbb180b85c.png)
+![image](https://user-images.githubusercontent.com/67130044/142582490-3f7ab8ba-8328-44af-a883-56f7c97c5e7e.png)
+
 
 ### Dionaea Honeypot Deployment (Required)
 
@@ -21,9 +23,9 @@ The Honeypot was deployed by using GCP through the Web and CLI
 ### Database Backup (Required) 
 
 **Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record?
+The relation database management system that MHN-Admin uses is 
 
 
-*Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
 
 ### Deploying Additional Honeypot(s) (Optional)
 
