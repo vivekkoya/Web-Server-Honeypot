@@ -169,4 +169,4 @@ wget "http://34.138.77.219/api/script/?text=true&script_id=2" -O deploy.sh && su
 ```
 ## Notes
 
-Working with the configuration after stopping a VM instance was a trouble since the VM would take on new external IP addresses each time the instance was stopped and started. This required changing the commands manually to accomadate the change in IP addresses. 
+Working with the configuration after stopping a VM instance was a trouble since the VM would take on new external IP addresses each time the instance was stopped and started. This required changing the commands manually to accomodate the change in IP addresses. 
